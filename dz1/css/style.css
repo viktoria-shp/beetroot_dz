@@ -1,0 +1,73 @@
+* {
+  font-family: 'EB Garamond', serif;
+}
+body {
+  padding: 2rem 0;
+}
+
+.main_border {
+  border-top: 1px solid #c3c3c3;
+  border-bottom: 1px solid #c3c3c3;
+  padding: 0.5rem 0;
+  margin: 1.5rem 0;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.cv_page p, .cv_page li, .cv_page a, .cv_page .table {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 980px) {
+
+  .main_text {
+    font-size: 1.5rem;
+  }
+
+  .fs-13 {
+    font-size: 1.3rem;
+  }
+
+  .cv_page p, .cv_page li, .cv_page a, .cv_page .table {
+    font-size: 1rem;
+  }
+
+  body {
+    padding: 1rem 0;
+  }
+  .main {
+    padding: 0;
+  }
+  .main_border {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+     -webkit-text-size-adjust: none;
+  }
+
+  .main_text {
+    font-size: 1.5rem;
+  }
+
+  .fs-13 {
+    font-size: 1.3rem;
+  }
+
+  .cv_page p, .cv_page li, .cv_page a, .cv_page .table {
+    font-size: 0.8rem;
+  }
+  body {
+    padding: 1rem 0;
+  }
+  .main {
+    padding: 0;
+  }
+  .main_border {
+    margin: 1rem 0;
+  }
+}
