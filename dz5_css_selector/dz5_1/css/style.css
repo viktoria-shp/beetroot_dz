@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+  font-size: 100%;
+}
+section {
+  background-color: #fff;
+  background-image: url(../assets/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.card {
+  font-size: 14px;
+  font-family: "proxima-nova", sans-serif;
+  padding: 141px 0 70px;
+  color: #9d9d9d;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .title {
+  font-weight: bold;
+  color: #000000;
+  margin: 20px 0 22px;
+}
+.card_img {
+  top: 0;
+  display: flex;
+  border-radius: 50%;
+  background-color: #1275b09c;
+  width: 66px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  animation-fill-mode: #000;
+  animation-fill-mode: #000;
+  position: absolute;
+  margin-top: 55px;
+}
+.card_img svg {
+  fill: #fff;
+}
+.card_img:hover {
+  border: 1px solid #1275b9;
+  background-color: transparent;
+  fill: #1275b9;
+}
