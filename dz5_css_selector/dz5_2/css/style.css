@@ -39,7 +39,6 @@ form {
   margin: 40px 0;
 }
 ul li {
-  padding: 20px 0;
   list-style: none;
 }
 li:nth-child(odd) {
@@ -60,7 +59,12 @@ li:nth-child(even) {
 }
 input[type="checkbox"] {
   zoom: 1.5;
-  margin: 0 20px 0 15px;
+  margin: 20px 0px 0 15px;
+    position: absolute;
+}
+label {
+    padding: 20px 0 20px 50px;
+    display: block;
 }
 .text_list {
   padding: 25px 0;
@@ -75,14 +79,15 @@ ul li:hover {
   border-bottom: 2px solid #fff;
   background-color: #625e77;
 }
-input[type="checkbox"]:checked + span.checked {
-  text-decoration: line-through;
-  
-}
-ul li:active {
+
+input[type="checkbox"]:checked + label {
     background-color: #eb7e7f;
     transition: all .15s ease-in;
 }
+input[type="checkbox"]:checked + label span {
+    text-decoration: line-through;
+}
+
 span .text_description::before {
     content: "(";
 }
