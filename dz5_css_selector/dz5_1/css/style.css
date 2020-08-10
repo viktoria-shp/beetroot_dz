@@ -11,9 +11,9 @@ body {
 }
 section {
   background-color: #fff;
-  background-image: url(../assets/bg.png);
+  background-image: url(../assets/bg1.png);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -53,5 +53,7 @@ section {
 .card_img:hover {
   border: 1px solid #1275b9;
   background-color: transparent;
+}
+.card_img:hover svg {
   fill: #1275b9;
 }
