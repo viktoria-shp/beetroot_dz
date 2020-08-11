@@ -60,11 +60,11 @@ li:nth-child(even) {
 input[type="checkbox"] {
   zoom: 1.5;
   margin: 20px 0px 0 15px;
-    position: absolute;
+  position: absolute;
 }
 label {
-    padding: 20px 0 20px 50px;
-    display: block;
+  padding: 20px 0 20px 50px;
+  display: block;
 }
 .text_list {
   padding: 25px 0;
@@ -73,6 +73,8 @@ label {
   font-size: 25px;
   text-align: center;
   margin-bottom: 100px;
+  width: 100%;
+  border: none;
 }
 ul li:hover {
   border-top: 2px solid #fff;
@@ -81,19 +83,27 @@ ul li:hover {
 }
 
 input[type="checkbox"]:checked + label {
-    background-color: #eb7e7f;
-    transition: all .15s ease-in;
+  background-color: #eb7e7f;
+  transition: all 0.15s ease-in;
 }
 input[type="checkbox"]:checked + label span {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 span .text_description::before {
-    content: "(";
+  content: "(";
 }
 span .text_description::after {
-    content: ")";
+  content: ")";
 }
 .text_list span::after {
-    content: ":)";
+  content: ":)";
+}
+button {
+  outline: none;
+  margin-top: 40px;
+}
+button:hover {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }

@@ -10,8 +10,6 @@ body {
   font-size: 100%;
 }
 section {
-  background-color: #fff;
-  background-image: url(../assets/bg1.png);
   background-position: center;
   background-repeat: repeat;
   display: flex;
