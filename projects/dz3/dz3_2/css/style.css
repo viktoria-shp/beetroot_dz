@@ -75,6 +75,9 @@ h5 {
   color: #fff;
   text-align: center;
 }
+.copyright p{
+  margin: 0;
+}
 footer {
   margin-top: 20px;
   font-size: 20px;

@@ -1,0 +1,70 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 143px 0 106px;
+  max-width: 535px;
+  text-align: center;
+  &_subtitle {
+    font-size: $subt-size;
+    font-family: $subt-font;
+    color: $text-color;
+  }
+  &_title {
+    margin: 35px 0 44px;
+    font-family: $title-font;
+    font-size: $title-size;
+    color: $title-color;
+    text-transform: uppercase;
+  }
+  &_description {
+    font-family: $tdesc-font;
+    font-size: $tdesc-size;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+}
+.cards {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 187px;
+  &_item {
+    background-color: $main-color;
+    padding: 55px 0 94px;
+    border: 1px solid $border-color;
+    &:hover{
+      background-color: $hover-color;
+      color: #fff;
+      border: none;
+    }
+    :hover > & {
+      
+      &__icon svg {
+        fill: #fff;
+      }
+      &__title {
+        color: #fff;
+      }
+    }
+    &__icon svg {
+      fill: $icon-color;
+    }
+    &__title {
+      font-family: $title-font;
+      font-size: $cards_title-size;
+      color: $icon-color;
+      text-transform: uppercase;
+      margin: 55px 0 33px;
+    }
+    &__description {
+      font-family: $tdesc-font;
+      font-size: $cards_text-size;
+      color: $icon-color;
+    }
+  }
+}
