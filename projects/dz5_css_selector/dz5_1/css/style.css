@@ -19,7 +19,7 @@ section {
 .card {
   font-size: 14px;
   font-family: "proxima-nova", sans-serif;
-  padding: 141px 0 70px;
+  padding: 70px 0;
   color: #9d9d9d;
   position: relative;
   display: flex;
@@ -29,7 +29,7 @@ section {
 .card .title {
   font-weight: bold;
   color: #000000;
-  margin: 20px 0 22px;
+  margin-bottom: 22px;
 }
 .card_img {
   top: 0;
@@ -42,8 +42,7 @@ section {
   justify-content: center;
   animation-fill-mode: #000;
   animation-fill-mode: #000;
-  position: absolute;
-  margin-top: 55px;
+  margin-bottom: 20px;
 }
 .card_img svg {
   fill: #fff;
