@@ -1,17 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,700;1,400&family=Karla&display=swap');
+@font-face {
+    font-family: 'lucida_sans_unicoderegular';
+    src: url('../assets/fonts/l_10646-webfont.woff2') format('woff2'),
+         url('../assets/fonts/l_10646-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
 
 $title-color: #202020;
 $text-color: #666666;
 $button-color: #2EC06C;
-$icon-color: #3B5998;
+$icon-color: #bfdfef;
 $hover-color: #FF0084;
+$bg-color: #3399cc;
+$border-color: #2b81ac;
 $white: #fff;
 $black: #000;
 
-$title-size: 30px;
+$title-size: 21px;
+$mtext-size: 18px;
 $text-size: 16px;
 
-$main-font: 'Asap', sans-serif;
-$sec-font: 'Karla', sans-serif;
 
+$main-font: 'lucida_sans_unicoderegular', sans-serif;
 

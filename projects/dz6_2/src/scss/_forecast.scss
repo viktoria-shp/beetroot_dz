@@ -1,0 +1,135 @@
+.weather-forecast {
+  background-color: $bg-color;
+  border: 22px solid $border-color;
+  padding: 40px 220px 140px;
+  &__title {
+    font-family: $main-font;
+    color: $white;
+    font-size: $title-size;
+    margin-bottom: 40px;
+  }
+  &__container {
+    display: inline-block;
+    font-size: $mtext-size;
+    margin-bottom: 35px;
+    ul {
+      font-size: 0;
+      position: relative;
+      &:before {
+        content: " ";
+        background-color: $white;
+        height: 3px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+      }
+      &:after {
+        content: " ";
+        background-color: #fff;
+        width: 3px;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+      }
+    }
+    p {
+      color: $white;
+    }
+    span,
+    i {
+      color: rgba(255, 255, 255, 0.5);
+      white-space: nowrap;
+    }
+    i {
+      padding-left: 10px;
+    }
+    .w100 {
+      width: 100%;
+      padding: 35px 0 30px;
+    }
+    .w50 {
+      width: 50%;
+      padding: 35px 0 30px;
+    }
+    .w25 {
+      width: 25%;
+      padding: 35px 0 30px;
+    }
+    @include box-color(1, #3192c3);
+    @include box-color(2, #33cccc);
+    @include box-color(3, #996699);
+    @include box-color(4, #c24747);
+    @include box-color(5, #e2674a);
+    @include box-color(6, #ffcc66);
+    @include box-color(7, #99cc99);
+    @include box-color(8, #669999);
+    @include box-color(9, #cc6699);
+    @include box-color(10, #339966);
+    @include box-color(11, #666699);
+    li {
+      display: inline-block;
+      font-size: 20px;
+      text-align: center;
+      position: relative;
+      &:before {
+        content: ' ';
+        background-color: $white;
+        height: 3px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      &:after {
+        content: ' ';
+        background-color: $white;
+        width: 3px;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+      }
+    }
+    &:hover {
+      @include box-color(1, #3192c3, 0.3);
+      @include box-color(2, #33cccc, 0.3);
+      @include box-color(3, #996699, 0.3);
+      @include box-color(4, #c24747, 0.3);
+      @include box-color(5, #e2674a, 0.3);
+      @include box-color(6, #ffcc66, 0.3);
+      @include box-color(7, #99cc99, 0.3);
+      @include box-color(8, #669999, 0.3);
+      @include box-color(9, #cc6699, 0.3);
+      @include box-color(10, #339966, 0.3);
+      @include box-color(11, #666699, 0.3);
+      @include box-color(1, #3192c3, 1, true);
+      @include box-color(2, #33cccc, 1, true);
+      @include box-color(3, #996699, 1, true);
+      @include box-color(4, #c24747, 1, true);
+      @include box-color(5, #e2674a, 1, true);
+      @include box-color(6, #ffcc66, 1, true);
+      @include box-color(7, #99cc99, 1, true);
+      @include box-color(8, #669999, 1, true);
+      @include box-color(9, #cc6699, 1, true);
+      @include box-color(10, #339966, 1, true);
+      @include box-color(11, #666699, 1, true);
+      /*opacity: 0.7;
+      transition: all 0.2s ease-in;
+      &:hover {
+        opacity: 1;
+      }*/
+    }
+  }
+  &__text {
+    color: $white;
+    font-size: $text-size;
+  }
+}

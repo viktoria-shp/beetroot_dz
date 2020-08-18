@@ -4,56 +4,35 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Title</title>
+	<title>box_model2</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.css">
 </head>
 
 <body>
-
-	<section class="contact-us">
-		<h1 class="contact-us__title">Have any project!</h1>
-		<p class="contact-us__text">Just send me a message I will help you and make you smile</p>
-		<div class="contact-us__row">
-			<ul class="contact-us__list">
-				<li class="contact-us__list-item">
-					<a href="#" target="_blank" class="contact-us__link">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-				</li>
-				<li class="contact-us__list-item">
-					<a href="#" target="_blank" class="contact-us__link">
-						<i class="fab fa-twitter"></i>
-					</a>
-				</li>
-				<li class="contact-us__list-item">
-					<a href="#" target="_blank" class="contact-us__link">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</li>
-				<li class="contact-us__list-item">
-					<a href="#" target="_blank" class="contact-us__link">
-						<i class="fab fa-dribbble"></i>
-					</a>
-				</li>
-			</ul>
-			<form class="contact-us__form">
-				<input type="text" class="contact-us__input" placeholder="First name" value="Eftakher Ala">
-				<input type="text" class="contact-us__input" placeholder="Last name">
-				<input type="text" class="contact-us__input" placeholder="Your Email">
-				<input type="text" class="contact-us__input" placeholder="Project Name">
-				<div class="contact-us__textarea-wrapper">
-					<textarea class="contact-us__textarea" placeholder="Your Message......."></textarea>
-					<button type="submit" class="contact-us__btn">
-						<i class="fab fa-telegram-plane"></i>
-					</button>
-				</div>
-			</form>
+	<div class="weather-forecast">
+		<div class="weather-forecast__title">
+			<span>CSS Weather Forecast</span>
+			<i class="wi wi-sunrise"></i>
 		</div>
-	</section>
-
-	<script src="https://kit.fontawesome.com/222beed113.js" crossorigin="anonymous"></script>
-	<script src="js/bundle.js"></script>
+		<div class="weather-forecast__container">
+			<ul>
+				<li class="box_1 w50"><p>Lisbon</p><span>21&#176C</span><i class="wi wi-day-sunny"></i></li>
+				<li class="box_2 w25"><p>Paris</p><span>11 &#176C</span><i class="wi wi-night-rain-mix"></i></li>
+				<li class="box_3 w25"><p>Belgrade</p><span>15&#176C</span><i class="wi wi-day-cloudy"></i></li>
+				<li class="box_4 w25"><p>Moscow</p><span>21&#176C</span><i class="wi wi-day-cloudy-high"></i></li>
+				<li class="box_5 w25"><p>Tel Aviv</p><span>32&#176C</span><i class="wi wi-hot"></i></li>
+				<li class="box_6 w25"><p>Cair</p><span>21&#176C</span><i class="wi wi-day-sunny"></i></li>
+				<li class="box_7 w25"><p>New York</p><span>17&#176C</span><i class="wi wi-day-snow-thunderstorm"></i></li>
+				<li class="box_8 w25"><p>New Delhi</p><span>17&#176C</span><i class="wi wi-rain-wind"></i></li>
+				<li class="box_9 w50"><p>San Francisco</p><span>15&#176C</span><i class="wi wi-day-sunny-overcast"></i></li>
+				<li class="box_10 w25"><p>Tokyo</p><span>8&#176C</span><i class="wi wi-night-clear"></i></li>
+				<li class="box_11 w100"><p>Sydney</p><span>25&#176C</span><i class="wi wi-night-partly-cloudy"></i></li>
+			</ul>
+		</div>
+		<div class="weather-forecast__text"> Have a nice day and don't forget umbrella if you are in New Delhi now!
+		</div>
+	</div>
 </body>
-
 </html>
