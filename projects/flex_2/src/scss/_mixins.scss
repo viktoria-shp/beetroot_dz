@@ -1,0 +1,14 @@
+@mixin box-color($iter, $color, $opacity: 1, $hover: false){
+    @if $hover {
+        .box_#{$iter}:hover {
+            content: '#{$opacity}';
+            background-color: rgba($color, $opacity);
+        }
+    } @else {
+        .box_#{$iter} {
+            content: '#{$opacity}';
+            background-color: rgba($color, $opacity);
+        }
+    }
+    
+}
