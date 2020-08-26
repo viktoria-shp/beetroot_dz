@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 150px 100px 120px;
+  .article {
+    max-width: 1400px;
+    box-shadow: 0 0 2em 1em #f4f4f4;
+    padding: 140px 120px 120px;
+    &__title {
+      font-family: $main-font;
+      font-size: $title-size;
+      color: $title-color;
+      margin-bottom: 40px;
+    }
+    &__text {
+      font-family: $text-font;
+      font-size: $text-size;
+      color: $text-color;
+      margin-bottom: 42px;
+      p {
+        margin-bottom: 40px;
+      }
+      p:last-of-type {
+        margin-bottom: 20px;
+      }
+      .subhead::first-letter {
+        float: left;
+        margin: -15px 20px 6px 0;
+        font: 4.1em/1 $main-font;
+        color: $title-color;
+      }
+      blockquote:before {
+        content: "“";
+        content: open-quote;
+        font-size: 60px;
+        line-height: 0.7;
+        padding: 0 25px 0 10px;
+      }
+      blockquote p {
+        display: inline;
+        font-size: $blockquote-size;
+      }
+    }
+    &__button {
+        button {
+            border: 1px solid $button-color;
+            background-color: $white;
+            padding: 18px 50px;
+            font-size: $blockquote-size;
+            color: $button-color;
+            font-weight: 500;
+            letter-spacing: 5px;
+        }
+    }
+  }
+}

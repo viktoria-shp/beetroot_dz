@@ -9,11 +9,7 @@ html, body {
 body {
     font-size: 100%;
     color: $text-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    
 li {
   list-style: none;
 }
