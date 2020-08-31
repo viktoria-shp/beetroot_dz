@@ -51,8 +51,12 @@
             font-weight: 500;
             letter-spacing: 5px;
             cursor: pointer;
+            outline: none;
+            &:hover {
+              background-color: $button-color;
+              color: #fff;
+            }
         }
-        
     }
   }
 }

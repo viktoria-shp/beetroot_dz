@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+    min-height: 100vh;
+}
+body {
+    font-size: 100%;
+    color: $title-color;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
