@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  max-width: 800px;
+  max-height: 600px;
+  padding: 120px 60px;
+  .card {
+    background-color: $bg-color;
+    font-family: $main-font;
+    padding: 25px 55px 25px 25px;
+    &__main {
+      display: flex;
+    }
+    &__logo {
+    }
+    &__col-img {
+      width: 85%;
+      img {
+        margin-bottom: 70px;
+      }
+      .radio {
+        display: flex;
+        justify-content: center;
+        input {
+          display: none;
+        }
+
+        .button {
+          display: inline-block;
+          position: relative;
+          width: 10px;
+          height: 10px;
+          margin: 5px;
+          cursor: pointer;
+        }
+
+        .button span {
+          display: block;
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          padding: 0;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          border-radius: 100%;
+          background: #eeeeee;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          transition: ease 0.3s;
+        }
+
+        .button span:hover {
+          border: 2px solid #7b8188;
+          background: #1f273f;
+          padding: 7px;
+        }
+        .active .button span {
+          border: 2px solid #7b8188;
+          background: #1f273f;
+          padding: 7px;
+        }
+        input[type="radio"]:checked + .button span {
+          border: 2px solid #7b8188;
+          padding: 7px;
+        }
+        .dark_blue .button span {
+          background: #1f273f;
+        }
+
+        .white .button span {
+          background: #fff;
+        }
+
+        .red .button span {
+          background: #ed3333;
+        }
+
+        .blue .button span {
+          background: #29e3ea;
+        }
+      }
+    }
+    &__col-desk {
+      .title {
+        font-size: $title-size;
+        margin-bottom: 18px;
+      }
+      .text {
+        font-size: $text-size;
+        margin-bottom: 25px;
+      }
+    }
+    &__rate {
+      color: $rate-color;
+      margin-bottom: 25px;
+      .checked {
+        color: $rate-color-cheked;
+      }
+    }
+    &__sel {
+      margin-bottom: 30px;
+    }
+    .selval {
+      background-color: $bg-color;
+      border: 1px solid #4f5560;
+      padding: 10px 15px;
+      color: $title-color;
+    }
+    input {
+      background-color: $button-color;
+      padding: 15px 55px;
+      font-size: $text-size;
+      font-family: $main-font;
+      color: $title-color;
+      border: 1px solid $rate-color;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Miso';
-  src: url('../assets/fonts/MISO-LIG.OTF') format('otf');
+  font-family: "Miso";
+  src: url("../assets/fonts/miso-light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,5 +16,4 @@ $price-size: 70px;
 $title-size: 56px;
 $text-size: 20px;
 
-$main-font: 'Miso', serif;
-
+$main-font: "Miso", sans-serif;

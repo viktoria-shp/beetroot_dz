@@ -1,0 +1,61 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color;
+  max-width: 100%;
+}
+.container__tab {
+  background-image: url(../img/bg-form.png);
+  background-repeat: no-repeat;
+  max-width: 400px;
+  padding: 55px 75px;
+  .tabs {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .tabs .tab {
+    float: left;
+    display: block;
+  }
+  .tabs .tab > input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .tabs .tab > label {
+    display: block;
+    padding: 6px 21px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    color: $title-color;
+  }
+  .tabs .content {
+    z-index: 0; /* or display: none; */
+    overflow: hidden;
+    width: 600px;
+    padding: 25px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    color: #dfdfdf;
+    opacity: 0;
+    transition: opacity 400ms ease-out;
+  }
+  .tabs > .tab > [id^="tab"]:checked + label {
+    top: 0;
+    border-bottom: 1px solid $border-color;
+    color: #f5f5f5;
+  }
+  .tabs > .tab > [id^="tab"]:checked ~ [id^="tab-content"] {
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 400ms ease-out;
+  }
+}

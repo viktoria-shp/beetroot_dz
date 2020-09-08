@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>nike-card</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/fav/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__logo">
+          <img src="./img/logo.png" alt="logo" />
+        </div>
+        <form action="/action_page.php" class="card__main">
+          <div class="card__col-img">
+            <img src="./img/main-img.png" alt="shoes" />
+            <div class="radio">
+              <label class="dark_blue">
+                <input type="radio" name="color" value="dark_blue" checked>
+                <div class="button"><span></span></div>
+              </label>
+              <label class="white">
+                <input type="radio" name="color" value="white">
+                <div class="button"><span></span></div>
+              </label>
+              <label class="red">
+                <input type="radio" name="color" value="red">
+                <div class="button"><span></span></div>
+              </label>
+              <label class="blue">
+                <input type="radio" name="color" value="blue">
+                <div class="button"><span></span></div>
+              </label>
+            </div>
+          </div>
+          <div class="card__col-desk">
+            <p class="title">Nike SB Stefan Janoski Max</p>
+            <p class="text">Unisex Skateboarding Shoe (Men's Sizing)</p>
+            <div class="card__rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>            
+              <div class="card__sel">
+                <select name="size" class="selval" id="selectvalue">
+                    <option>Size</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                </select> 
+                <select name="quantity" class="selval" id="selectvalue">
+                  <option>Qty</option>
+                  <option>10</option>
+                  <option>15</option>
+                  <option>20</option>
+                  <option>25</option>
+                </select>               
+              </div>
+              <input type="submit" value="Add to cart"></input>
+            </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

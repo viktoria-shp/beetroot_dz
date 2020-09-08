@@ -3,7 +3,6 @@ body {
   padding-bottom: 100px;
 }
 img {
-  max-width: 100%;
   cursor: pointer;
 }
 a {
@@ -17,48 +16,6 @@ a {
   padding: 85px 0 90px;
   gap: 1.5rem;
   max-width: 1200px;
-  .big_card-item {
-    position: relative;
-    max-width: 740px;
-    text-align: center;
-    font-size: 0;
-    background: linear-gradient(
-      170deg,
-      rgba(250, 250, 250, 1) 17%,
-      rgba(13, 13, 13, 1) 60%,
-      rgba(0, 0, 0, 1) 100%
-    );
-    .text-box {
-      position: absolute;
-      padding-bottom: 40px;
-      bottom: 8px;
-      left: 16px;
-      max-width: 60%;
-      text-align: justify;
-    }
-    &__img {
-      height: 100%;
-      opacity: 0.75;
-      & img {
-        height: inherit;
-      }
-    }
-    &__date {
-      margin-bottom: 20px;
-      font-size: $date-size;
-      font-family: $main-font;
-      color: $white;
-      opacity: 0.5;
-      text-transform: uppercase;
-    }
-    &__text {
-      font-size: $big_text-size;
-      font-family: $main-font;
-      color: $white;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-  }
   .card-item {
     max-width: 360px;
     background-color: $white;
@@ -94,6 +51,48 @@ a {
     &__author {
       font-size: 0;
     }
+    &__img_big {
+      height: 100%;
+      opacity: 0.75;
+      & img {
+        height: inherit;
+      }
+    }
+    &__date_big {
+      margin-bottom: 20px;
+      font-size: $date-size;
+      font-family: $main-font;
+      color: $white;
+      opacity: 0.5;
+      text-transform: uppercase;
+    }
+    &__text_big {
+      font-size: $big_text-size;
+      font-family: $main-font;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  .card-item_big {
+    position: relative;
+    max-width: 740px;
+    text-align: center;
+    font-size: 0;
+    background: linear-gradient(
+      170deg,
+      rgba(250, 250, 250, 1) 17%,
+      rgba(13, 13, 13, 1) 60%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    .text-box {
+      position: absolute;
+      padding-bottom: 40px;
+      bottom: 8px;
+      left: 16px;
+      max-width: 60%;
+      text-align: justify;
+    }    
   }
 }
 .load {

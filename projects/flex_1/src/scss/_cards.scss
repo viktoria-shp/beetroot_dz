@@ -13,7 +13,7 @@ a {
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  padding: 80px 30px;
+  padding: 78px 30px;
   .card-item {
     flex: 0 1 calc((100% / 3) - 2rem);
     background-color: $white;
@@ -23,7 +23,7 @@ a {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 40px 100px;
+    padding: 45px 117px;
     transition: all 0.2s ease-in-out;
     box-shadow: 1px 2px 5px 0px rgba(158,158,158,0.5);
     &:hover {
@@ -33,16 +33,17 @@ a {
       color: $price-color;
       font-size: $price-size;
       font-family: $main-font;
-      margin-bottom: 25px;
+      font-weight: bolder;
+      margin-bottom: 10px;
     }
     &__img {
-      margin-bottom: 35px;
+      margin-bottom: 15px;
     }
     &__title {
       font-size: $title-size;
       color: $title-color;
       font-family: $main-font;
-      margin-bottom: 35px;
+      margin-bottom: 15px;
     }
     &__text {
       font-size: $text-size;
