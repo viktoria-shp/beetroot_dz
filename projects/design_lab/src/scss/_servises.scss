@@ -1,0 +1,24 @@
+.main {
+  &__services-container {
+    background-image: url(../img/servises_bg.png);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 109px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main__border--white {
+    border: 1px solid $white;
+    border-top: none;
+  }
+  .main-box--white {
+    &::before,
+    &::after {
+      background-color: $white;
+    }
+  }
+  .main-box--white {
+    color: $white;
+  }
+}

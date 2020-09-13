@@ -1,0 +1,20 @@
+.main {
+  &__contact {
+    padding: 137px 0 63px 0;
+  }
+  &__text {
+    margin-bottom: 41px;
+  }
+  .button {
+    background-color: $title-color;
+    padding: 24px 138px;
+    color: $white;
+    font-size: $card-text;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+}
+.main__border--contact {
+  padding: 59px 178px 50px 178px;
+}

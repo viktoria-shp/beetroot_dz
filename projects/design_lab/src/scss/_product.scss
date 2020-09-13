@@ -1,0 +1,32 @@
+.main {
+  &__product-container {
+    padding: 105px 0;
+  }
+  &__product--item {
+    margin-bottom: 109px;
+  }
+  &__product--item:last-child {
+    margin-bottom:0;
+  }
+  &__border--big {
+    padding: 112px 173px 92px 181px;
+  }
+  &__icon {
+    margin-bottom: 40px;
+    .icon--shape {
+      width: 81px;
+      height: 84px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 37px;
+    font-size: $card-subtitle;
+    text-transform: uppercase;
+    font-family: $main-font;
+  }
+  &__text {
+    margin-bottom: 37px;
+    font-size: $card-text;
+    font-family: $main-font;
+  }
+}

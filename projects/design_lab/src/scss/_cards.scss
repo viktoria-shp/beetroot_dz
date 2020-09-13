@@ -1,0 +1,52 @@
+.main {
+  &__cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__card {
+    display: flex;
+    position: relative;
+    flex: 1 1 auto;
+    width: 33.3%;
+    padding: 0 10px 10px 0;
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      cursor: pointer;
+    }
+  }
+  &__card:nth-child(3n) {
+    padding: 0 0 10px 0;
+  }
+  &__card:nth-last-child(-n + 3) {
+    padding-bottom: 0;
+  }
+
+  &__card-link {
+  }
+  &__card-img {
+    display: flex;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  &__card-title {
+    position: absolute;
+    font-size: $cards-title;
+    text-transform: uppercase;
+    font-family: $main-font;
+    bottom: 42px;
+    left: 47px;
+    color: $white;
+  }
+}

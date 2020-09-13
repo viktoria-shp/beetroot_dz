@@ -1,61 +1,202 @@
-
+*:focus {
+  outline: none;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $bg-color;
   max-width: 100%;
+  padding: 55px 0;
 }
-.container__tab {
+.form-container {
   background-image: url(../img/bg-form.png);
   background-repeat: no-repeat;
   max-width: 400px;
-  padding: 55px 75px;
-  .tabs {
-    width: 600px;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 50px;
+  height: 496px;
+  padding: 47px 74px;
+  box-shadow: 0px 19px 24px -5px rgba(0, 0, 0, 0.78);
+  background-size: cover;
+  display: flex;
+  &__tab {
+    .tabs {
+      width: 497px;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .tabs .tab {
+      float: left;
+      display: block;
+    }
+    .tabs .tab > input[type="radio"] {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    .tabs .tab > label {
+      display: block;
+      cursor: pointer;
+      position: relative;
+      color: $title-color;
+      font-family: $main-font;
+      font-size: $title-size;
+      text-transform: none;
+      margin-bottom: 50px;
+      padding-right: 30px;
+    }
+    .tabs .tab:last-child > label {
+      padding-right: 0px;
+      opacity: 0.5;
+    }
+    .tabs .form {
+      z-index: 0; /* or display: none; */
+      overflow: hidden;
+      width: 260px;
+      position: absolute;
+      left: 0;
+      color: #dfdfdf;
+      opacity: 0;
+      transition: opacity 400ms ease-out;
+    }
+    .tabs > .tab > [id^="tab"]:checked + label:after {
+      display: block;
+      padding-bottom: 3px;
+      content: "";
+      width: 100%;
+      border-bottom: 2px solid $border-color;
+      color: $border-color;
+    }
+    .tabs > .tab > [id^="tab"]:checked ~ [id^="tab-content"] {
+      z-index: 1;
+      opacity: 1;
+      transition: all 0.4s ease;
+    }
+    input[type="checkbox"]#rememberMe:checked {
+      display: none;
+    }
+    input[type="checkbox"]#rememberMe:checked + span {
+      background-color: #23ae92;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+    }
   }
-  .tabs .tab {
-    float: left;
-    display: block;
+  .form {
+    &__username,
+    &__pwd {
+      height: 38px;
+      background-color: transparent;
+      border: 2px solid #9782c6;
+      margin: 10px 0 18px;
+      color: $title-color;
+    }
+    input[type="text"] {
+      transition: ease, 0.3s;
+      padding: 0 15px;
+    }
+    input[type="password"] {
+      transition: ease, 0.3s;
+      padding: 0 15px;
+    }
+    input[type="text"]:focus {
+      border: 2px solid #23ae92;
+    }
+    input[type="password"]:focus {
+      border: 2px solid #23ae92;
+    }
+    &__entry {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      height: 270px;
+    }
+    &__check {
+      font-size: $small-size;
+      padding-left: 25px;
+      position: absolute;
+      display: block;
+    }
+    &__checkbox {
+      margin-bottom: 40px;
+    }
+    &__button {
+      background-color: #23ae92;
+      border: none;
+      padding: 13px 0;
+      color: $title-color;
+      font-size: $small-size;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      position: absolute;
+      bottom: 50px;
+      width: 260px;
+      border: 2px solid #23ae92;
+    }
+    &__button:hover {
+      background-color: #e66a64;
+      border: 2px solid #23ae92;
+      opacity: 0.8;
+    }
+    &__link {
+      display: flex;
+      justify-content: space-between;
+      a {
+        font-family: $main-font;
+        font-size: $small-size;
+        color: $title-color;
+        opacity: 0.5;
+        padding-top: 30px;
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 1px solid  rgba(251, 246, 228, 0.3);
+      }
+    }
+    .form__checkbox {
+      display: flex;
+      position: relative;
+      cursor: pointer;
+      font-size: 22px;
+    }
+    input[type="checkbox"] {
+      visibility: hidden;
+    }
+    .form__box--span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      background-color: $title-color;
+    }
+    .form__checkbox input:checked ~ .form__box--span {
+      background-color: #23ae92;
+      transition: all 0.4s ease;
+    }
+    .form__box--span:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    .form__checkbox input:checked ~ .form__box--span:after {
+      display: block;
+    }
+    .form__checkbox .form__box--span:after {
+      left: 5px;
+      bottom: 6px;
+      width: 4px;
+      height: 6px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
   }
-  .tabs .tab > input[type="radio"] {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  .tabs .tab > label {
-    display: block;
-    padding: 6px 21px;
-    font-size: 12px;
-    text-transform: uppercase;
-    cursor: pointer;
-    position: relative;
+  label {
+    font-family: $main-font;
+    font-size: $text-size;
     color: $title-color;
-  }
-  .tabs .content {
-    z-index: 0; /* or display: none; */
-    overflow: hidden;
-    width: 600px;
-    padding: 25px;
-    position: absolute;
-    top: 27px;
-    left: 0;
-    color: #dfdfdf;
-    opacity: 0;
-    transition: opacity 400ms ease-out;
-  }
-  .tabs > .tab > [id^="tab"]:checked + label {
-    top: 0;
-    border-bottom: 1px solid $border-color;
-    color: #f5f5f5;
-  }
-  .tabs > .tab > [id^="tab"]:checked ~ [id^="tab-content"] {
-    z-index: 1;
-    opacity: 1;
-    transition: opacity 400ms ease-out;
   }
 }

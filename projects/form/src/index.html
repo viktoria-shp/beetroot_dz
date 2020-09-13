@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>fonts</title>
+    <title>form</title>
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -13,37 +13,41 @@
   </head>
   <body>
     <div class="container">
-      <div class="container__tab">
-        <ul class="tabs">    
-          <li class="tab">
-              <input type="radio" name="tabs" checked="checked" id="tab1" />
-              <label for="tab1">One</label>
-              <div id="tab-content1" class="content">
-                <form action="/action_page.php" method="get">
-                  <label for="username">Username:</label><br>
-                  <input type="text" id="username" name="username"><br>
-                  <label for="pwd">Password:</label><br>
-                  <input type="password" id="pwd" name="pwd"><br><br>
-                  <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
-                  <input type="submit" value="Submit">
-                </form>
-              </div>
-          </li>
-          
-          <li class="tab">
-            <input type="radio" name="tabs" id="tab2" />
-            <label for="tab2">Two</label>   
-            <div id="tab-content2" class="content">
-                <h1>Tab content 2</h1>
-                <hr/>
-                <h3>Ut bibendum augue vel magna rhoncus</h3>
-                <br/>
-                <p>Nam cursus, massa ac imperdiet posuere, mauris metus gravida ligula, et rutrum ligula mi ut tellus. Quisque elit dolor, sagittis ac purus accumsan, sagittis rhoncus felis. Morbi nec bibendum arcu, sit amet pharetra orci. Nulla pulvinar ultrices quam. Cras nulla erat, eleifend non euismod vel, accumsan quis lacus. Ut bibendum augue vel magna rhoncus, sed rutrum massa vulputate. Nullam lectus diam, venenatis vel elit vel, ornare fermentum metus. Praesent euismod non mauris et dignissim. Sed in diam nec diam pellentesque lacinia at vitae lorem. Quisque et neque condimentum, viverra dolor mollis, feugiat justo.</p>    
-             </div>
-          </li>
-      
-
+      <div class="form-container">
+        <div class="form-container__tab">
+          <ul class="tabs">    
+            <li class="tab">
+                <input type="radio" name="tabs" checked="checked" id="tab1" />
+                <label for="tab1" class="form-container__item">Sign in</label>
+                <div id="tab-content1" class="form">
+                  <form class="form__entry" action="/action_page.php" method="get">
+                    <label for="username">Username:</label>
+                    <input class="form__username" type="text" id="username" name="username" required>
+                    <label for="pwd">Password:</label>                  
+                    <input class="form__pwd" type="password" id="pwd" name="pwd" required minlength="4" size="4">
+                    <div class="form__checkbox">
+                      <input class="form__box" type="checkbox" value="lsRememberMe" id="rememberMe">
+                      <span class="form__box--span"></span>
+                      <label class="form__check" for="rememberMe">Keep me signed in</label>
+                    </div>
+                    <input type="submit" value="Sign in" class="form__button">
+                  </form>
+                  <div class="form__link">
+                    <a href="#" target="_blank">Forgot password</a>
+                    <a href="#" target="_blank">Create an account</a>
+                  </div>
+                </div>
+            </li>          
+            <li class="tab">
+              <input type="radio" name="tabs" id="tab2" />
+              <label for="tab2" class="form-container__item">Join us</label>   
+              <div id="tab-content2" class="form-content">
+               </div>
+            </li> 
+          </ul>   
+        </div>
       </div>
     </div>
+    
   </body>
 </html>

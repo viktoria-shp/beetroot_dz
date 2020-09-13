@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 63px 0;
+    img {
+        padding-right: 36px;
+    }
+    span {
+        color: $title-color;
+        font-size: $card-subtext;
+        font-family: $main-font;
+    }
+}
