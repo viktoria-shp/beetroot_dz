@@ -10,7 +10,7 @@
     border: 1px solid $title-color;
     border-top: none;
     position: relative;
-    padding: 70px 175px 30px;
+    padding: 68px 175px 0px;
   }
   &__about-us {
     max-width: 900px;    
@@ -28,7 +28,6 @@
   &__text {
     font-size: $card-subtext;
     max-width: 555px;
-    line-height: 2;
     display: flex;
     flex-direction: column;
     align-items: center;

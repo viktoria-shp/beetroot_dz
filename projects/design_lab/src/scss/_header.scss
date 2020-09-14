@@ -24,21 +24,21 @@
   position: relative;
   &__logo {
     color: $white;
-    margin-bottom: 95px;
+    margin-bottom: 77px;
   }
   &__title {
     font-family: $main-font;
     font-size: $title-size;
     text-transform: uppercase;
-    margin-bottom: 50px;
-    max-width: 590px;
+    margin-bottom: 35px;
+    letter-spacing: 10px;
   }
   &__text {
     font-family: $main-font;
     font-size: $text-size;
     text-transform: uppercase;
     font-weight: 300;
-    margin-bottom: 245px;
+    margin-bottom: 276px;
     line-height: 2;
     max-width: 590px;
   }
@@ -46,16 +46,16 @@
     &-downs {
       position: absolute;
       right: 0;
-      bottom: 115px;
+      bottom: 97px;
       left: 0;
       margin: auto;  
-      width :34px;
+      width :31px;
       height: 55px;
     }
     &-mousey {
       width: 3px;
       padding: 10px;
-      height: 24px;
+      height: 15px;
       border: 2px solid #fff;
       border-radius: 25px;
       opacity: 0.75;
