@@ -1,0 +1,219 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  max-width: 1100px;
+  padding: 112px 0 95px;
+}
+.main-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  &__subtitle {
+    font-family: $main-family;
+    font-size: $subtitle-size;
+    color: $text-color;
+    margin-bottom: 18px;
+  }
+  &__title {
+    font-family: $title-font;
+    font-size: $title-size;
+    color: $title-color;
+    margin-bottom: 45px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border-top: 561px solid $title-color;
+      width: 2px;
+      height: 561px;
+      top: 200px;
+      right: calc(50% - 1px);
+    }
+  }
+  &__img {
+    margin-bottom: 133px;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      background-color: $title-color;
+      position: absolute;
+      width: 211px;
+      height: 2px;
+    }
+    &::before {
+      top: 12px;
+      bottom: 0;
+      left: 29px;
+    }
+    &::after {
+      top: 12px;
+      bottom: 0;
+      right: 30px;
+    }
+    img {
+      width: 16px;
+      height: 19px;
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  &__wrapper {
+    max-width: 100%;
+  }
+  &__img {
+    max-width: 388px;
+    margin-right: 183px;
+    font-size: 1em;
+    padding: calc(1em + 1px);
+    @include buildCorners($title-color, 102px, 2px);
+    img {
+      border: 2px solid $title-color;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__item {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 56px;
+    &:before {
+      content: "";
+      display: block;
+      z-index: 0;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__description {
+    max-width: 420px;
+    &-title {
+      font-family: $title-font;
+      font-size: $slide_title-size;
+      color: $slide_title-color;
+      margin-bottom: 68px;
+      position: relative;
+      &::after {
+        content: "";
+        height: 2px;
+        width: 101px;
+        position: absolute;
+        top: 71px;
+        left: calc(50% - 50px);
+        background: $title-color;
+      }
+    }
+    &-subtitle {
+      font-family: $main-family;
+      font-size: $slide_subtitle-size;
+      color: $slide_title-color;
+      margin-bottom: 27px;
+    }
+    &-links {
+      margin-bottom: 40px;
+      cursor: pointer;
+      img {
+        width: 31px;
+        height: 31px;
+      }
+    }
+    &-text {
+      font-family: $main-family;
+      font-size: $slide_text-size;
+      color: $slide_text-color;
+      margin-bottom: 50px;
+      position: relative;
+      &::after,
+      &::before {
+        position: absolute;
+        border-bottom: 5px dashed $title-color;
+        content: "";
+        width: 55px;
+        position: absolute;
+        bottom: -25px;
+        left: calc(50% - 27px);
+      }
+      &::before {
+        border-bottom: 5px dashed #fc0;
+        content: "";
+        height: 5px;
+        width: 5px;
+        position: absolute;
+        bottom: -25px;
+        left: -webkit-calc(50% - 27px);
+        left: calc(50% - 2px);
+      }
+    }
+    &-button {
+      button {
+        padding: 5px 12px;
+        border: 1px solid $title-color;
+        background-color: transparent;
+        color: $title-color;
+        cursor: pointer;
+      }
+    }
+  }
+  &__bullets {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    list-style: none;
+    display: flex;
+    flex: start;
+    li {
+      background-color: red;
+      margin-right: 20px;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.uk-active {
+        background-color: $white;
+      }
+    }
+  }
+  &__arrows {
+    position: absolute;
+    top: calc(50% - 23px);
+    img {
+      width: 14px;
+      height: 23px;
+    }
+    &--right {
+      left: 0;
+    }
+    &--left {
+      right: 0;
+    }
+  }
+}
