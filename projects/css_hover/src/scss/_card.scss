@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     text-align: center;
     margin-bottom: 60px;
-    &__title {
+    h1 {
       font-size: $title-size;
       font-weight: bold;
       color: $title-color;
@@ -23,7 +23,7 @@ body {
       position: relative;
       margin-bottom: 65px;
     }
-    &__title:after {
+    h1:after {
       display: block;
       content: "";
       width: 8%;
@@ -33,7 +33,7 @@ body {
       bottom: -20px;
       left: 47%;
     }
-    &__text {
+    span {
       max-width: 550px;
       font-size: $text-size;
       color: $title-color;
@@ -81,7 +81,13 @@ body {
             text-decoration: none;
             color: #fff;
         }
+        i:hover {
+          transition: 0.3 ease-in;
+          opacity: 0.7;
+        }
         i {
+          width: 43px;
+          height: 43px;
           padding: 14px;
           background-color: #6bbccf;
           cursor: pointer;
@@ -89,13 +95,13 @@ body {
       }
     }
 
-    &__title {
+    h2 {
       font-size: $text-size;
       color: $card_title-color;
       margin-bottom: 5px;
       font-weight: bold;
     }
-    &__text {
+    span {
       font-size: $card_text-size;
       color: $card_text-color;
     }
