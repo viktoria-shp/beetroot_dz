@@ -1,0 +1,32 @@
+.row
+  .col
+    .header
+      .header__top
+        .header__logo
+          a(href="#")
+            span Cahee
+        .header__menu
+          -
+            var menu = [
+              {text:'HOME', href:'index.html', active: 1},
+              {text:'ABOUT', href:'#'},
+              {text:'SERVICES', href:'#'},
+              {text:'GALLERY', href:'#'},
+              {text:'BLOG', href:'#'},
+              {text:'CONTACT', href:'#'}
+            ];
+          +menu(menu)
+      .header__main
+        .header__title
+          h1 Fresh Life
+          p Sed do eiusmod tempor incididunt ut labore et 
+          p dolore magna aliqua. Ut enim ad minim veniam, 
+          p quis nostrud exercitation ullamco.
+        .header__button
+          button(type='button' class=`btn`)
+            span GET FREE NOW
+      .header__scroll
+        a(href='#main')
+          .header__scroll-downs
+            .header__scroll-mousey
+              .header__scroll-scroller

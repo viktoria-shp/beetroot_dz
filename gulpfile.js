@@ -4,6 +4,7 @@ const { task } = require('./assembler/modules/vars').vars,
 gulp = require('gulp'),
 argv = require('yargs').argv,
 html = require('./assembler/modules/html'),
+pug = require('./assembler/modules/pug'),
 scss = require('./assembler/modules/scss'),
 js = require('./assembler/modules/scripts'),
 img = require('./assembler/modules/img'),
@@ -16,6 +17,7 @@ info = require('./assembler/modules/info');
 
 gulp.task(task.css, scss);
 gulp.task(task.html, html);
+gulp.task(task.pug, pug);
 gulp.task(task.js, js);
 gulp.task(task.img, img);
 gulp.task(task.assets, assets);
@@ -34,6 +36,7 @@ gulp.task(
 		task.js,
 		task.assets,
 		task.html,
+		task.pug,
 		task.server,
 		task.watch
 		)

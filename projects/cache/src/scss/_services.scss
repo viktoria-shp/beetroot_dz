@@ -1,0 +1,55 @@
+.services {
+  background-color: $services-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 179px 166px 163px 264px;
+  position: relative;
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    .btn {
+      background-color: $white;
+      align-items: center;
+      padding: 26px 25px 26px 60px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 19px;
+      font-family: $menu-font;
+      font-size: $btn-size;
+      color: $logo-color;
+      font-weight: bold;
+      position: relative;
+      min-width: 402px;
+      box-shadow: 1px 5px 8px 0px rgba(0,0,0,0.75);
+      border: 2px solid $white;
+      transition: 0.3s ease-in;
+    }
+    .btn:hover {
+        border: 2px solid $logo-color;
+    }
+    p:after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: $btn-color;
+        top: 0;
+        right: 90px;
+    }
+    .btn:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  &__img {
+  }
+  &__title {
+    font-family: $menu-font;
+    font-size: $about_us_title-size;
+    color: $white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(100%, -100%);
+  }
+}

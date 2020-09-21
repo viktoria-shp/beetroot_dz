@@ -1,9 +1,7 @@
 @font-face {
   font-family: 'HansKendrick';
-  src: url('../assets/fonts/NeueHansKendrick-Regular.otf') format('otf'),
-       url('../assets/fonts/NeueHansKendrick-Regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
+  src: url('../assets/fonts/HansKendrick-Regular.otf') format('otf');
+  font-weight: bold;
 }
 $date-color: #818181;
 $text-color: #1d1d1d;
@@ -17,5 +15,5 @@ $big_text-size: 30px;
 $text-size: 22px;
 
 
-$main-font: 'HansKendrick', serif;
+$main-font: 'HansKendrick', sans-serif;
 

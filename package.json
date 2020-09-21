@@ -46,6 +46,7 @@
     "last 15 version"
   ],
   "dependencies": {
+    "gulp-pug": "^4.0.1",
     "moment": "^2.24.0"
   }
 }

@@ -22,6 +22,7 @@ if(!fs.existsSync(targetPath) && argv.build) {
 const vars = {
 	task: {
 		html: 'html',
+		pug: 'pug',
 		css: 'css',
 		js: 'js',
 		img: 'img',
@@ -40,6 +41,7 @@ const vars = {
 		src: {
 			base: `${targetPath}/src/`,
 			html: `${targetPath}/src/*.+(ejs|html)`,
+			pug: `${targetPath}/src/*.+(jade|pug)`,
 			js: `${targetPath}/src/js/`,
 			scss: `${targetPath}/src/scss/**/[^_]*.+(css|scss|sass)`,
 			img: [`${targetPath}/src/img/**/*.*`, `!${targetPath}/src/img/**/*.ini`],
@@ -51,6 +53,7 @@ const vars = {
 		},
 		app: {
 			html: `${targetPath}/app/`,
+			pug: `${targetPath}/app/`,
 			js: `${targetPath}/app/js/`,
 			css: `${targetPath}/app/css/`,
 			img: `${targetPath}/app/img/`,
@@ -61,6 +64,7 @@ const vars = {
 		},
 		watch: {
 			html: [`${targetPath}/src/*.html`, `${targetPath}/src/*.ejs`, `${targetPath}/src/view/**/*.*`],
+			pug: [`${targetPath}/src/*.+(jade|pug)`],
 			js: `${targetPath}/src/js/**/*.+(js|ts)`,
 			scss: `${targetPath}/src/scss/**/*.+(css|scss|sass)`,
 			img: `${targetPath}/src/img/**/*.*`,

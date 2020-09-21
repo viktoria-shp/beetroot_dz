@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Pacifico;
+  src: url(../assets/fonts/9119.ttf);
+}
+@font-face {
+  font-family: Raleway-Heavy;
+  src: 
+    url(../assets/fonts/Raleway-Heavy.eot),
+    url(../assets/fonts/Raleway-Heavy.svg),
+    url(../assets/fonts/Raleway-Heavy.ttf),
+    url(../assets/fonts/Raleway-Heavy.woff);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+$logo-color: #262626;
+$header_btn-color: #FF6033;
+$about_us-color: #00C4C4;
+$services-color: #70BFFF;
+$btn-color: #9D9D9D;
+$gallery_bg-color: #ffe92f;
+$gallery_img-color: #00C4C4;
+$gallery_btn-color: #5585A2;
+$white: #fff;
+$black: #000;
+
+$logo-size: 50px;
+$menu-size: 16px;
+$header_title-size: 60px;
+$header_text-size: 17px;
+$btn-size: 20px;
+$about_us_title-size: 90px;
+
+
+$header_title-font: "Raleway-Heavy", sans-serif;
+$logo-font: "Pacifico", sans-serif;
+$menu-font: "Raleway", sans-serif;

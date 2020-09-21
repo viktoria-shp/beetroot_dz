@@ -1,0 +1,21 @@
+.about-us {
+    background-color: $about_us-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 72px 167px 70px 175px;
+    align-items: center;
+    &__description {
+        max-width: 500px;
+    }
+    &__title {
+        font-family: $menu-font;
+        font-size: $about_us_title-size;
+        color: $white;
+        font-weight: bold;
+    }
+    &__text {
+        font-family: $menu-font;
+        font-size: $header_text-size;
+        color: $white;
+    }
+}

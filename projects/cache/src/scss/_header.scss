@@ -1,0 +1,124 @@
+.container {
+  max-width: 1500px;
+}
+.header {
+  background-image: url(../img/header_bg.jpg);
+  padding: 50px 164px 156px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 258px;
+  }
+  &__logo {
+    a {
+      font-family: $logo-font;
+      font-size: $logo-size;
+      color: $logo-color;
+      text-decoration: inherit;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      font-family: $menu-font;
+      font-size: $menu-size;
+      font-weight: bold;
+      padding-right: 38px;
+      position: relative;
+    }
+    .active {
+      a:before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: $header_btn-color;
+        position: absolute;
+        width: calc(100% - 38px);
+        bottom: 29px;
+      }
+    }
+    a {
+      color: $logo-color;
+      text-decoration: none;
+    }
+    li:last-child {
+      padding-right: 0px;
+    }
+  }
+  &__title {
+    h1 {
+      font-size: $header_title-size;
+      color: $logo-color;
+      font-family: $header_title-font;
+      margin-bottom: 34px;
+    }
+    p {
+      font-size: $header_text-size;
+      color: $logo-color;
+      font-family: $menu-font;
+    }
+    margin-bottom: 51px;
+  }
+  &__button {
+    margin-bottom: 295px;
+    .btn {
+      background-color: $header_btn-color;
+      font-size: $btn-size;
+      padding: 13px 33px 13px 33px;
+      color: $white;
+      outline: none;
+      border: none;
+      transition: 0.3s ease-in;
+      box-shadow: 1px 5px 8px 0px rgba(0,0,0,0.75);
+    }
+    .btn:hover {
+      background-color: $logo-color;
+    }
+  }
+  &__scroll {
+    &-downs {
+      position: absolute;
+      right: 0;
+      bottom: 97px;
+      left: 0;
+      margin: auto;  
+      width :31px;
+      height: 55px;
+    }
+    &-mousey {
+      width: 3px;
+      padding: 10px;
+      height: 15px;
+      border: 2px solid $logo-color;
+      border-radius: 25px;
+      opacity: 0.75;
+      box-sizing: content-box;
+    }
+    &-scroller {
+      width: 3px;
+      height: 10px;
+      border-radius: 25%;
+      background-color: $logo-color;
+      animation-name: scroll;
+      animation-duration: 2.2s;
+      animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+      animation-iteration-count: infinite;
+    }
+    @keyframes scroll {
+      0% { opacity: 0; }
+      10% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(15px); opacity: 0;}
+    }
+  }
+}

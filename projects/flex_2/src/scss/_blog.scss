@@ -37,6 +37,7 @@ a {
     &__date {
       font-size: $date-size;
       font-family: $main-font;
+      font-weight: 700;
       color: $date-color;
       text-transform: uppercase;
       margin-bottom: 20px;
@@ -44,6 +45,7 @@ a {
     &__text {
       font-size: $text-size;
       font-family: $main-font;
+      font-weight: 700;
       color: $text-color;
       text-transform: uppercase;
       margin-bottom: 60px;
@@ -62,6 +64,7 @@ a {
       margin-bottom: 20px;
       font-size: $date-size;
       font-family: $main-font;
+      font-weight: 700;
       color: $white;
       opacity: 0.5;
       text-transform: uppercase;
