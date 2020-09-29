@@ -2,20 +2,38 @@
     background-color: $about_us-color;
     display: flex;
     justify-content: space-between;
-    padding: 72px 167px 70px 175px;
+    padding: 10px;
     align-items: center;
+    @media (min-width: 576px) and (max-width: 1023px) {
+        padding: 40px;
+    }
+    @media (min-width: 1024px) {
+        padding: 72px 167px 70px 175px;
+    }
     &__description {
         max-width: 500px;
     }
     &__title {
         font-family: $menu-font;
-        font-size: $about_us_title-size;
+        font-size: 30px;
         color: $white;
         font-weight: bold;
+        @media (min-width: 576px) and (max-width: 1023px) {
+            font-size: 40px;
+        }
+        @media (min-width: 1024px) {
+            font-size: $about_us_title-size;
+        }
     }
     &__text {
         font-family: $menu-font;
-        font-size: $header_text-size;
+        font-size: 10px;
         color: $white;
+        @media (min-width: 576px) and (max-width: 1023px) {
+            font-size: 12px;
+        }
+        @media (min-width: 1024px) {
+            font-size: $header_text-size;
+        }
     }
 }

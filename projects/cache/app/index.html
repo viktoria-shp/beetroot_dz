@@ -18,18 +18,20 @@
 			<div class="row">
 				<div class="col">
 					<div class="header">
-						<div class="header__top">
-							<div class="header__logo"><a href="#"><span>Cahee</span></a></div>
-							<div class="header__menu">
-									<ul>
-										<li class="active"><a href="index.html">HOME   </a></li>
-										<li><a href="#">ABOUT   </a></li>
-										<li><a href="#">SERVICES   </a></li>
-										<li><a href="#">GALLERY   </a></li>
-										<li><a href="#">BLOG   </a></li>
-										<li><a href="#">CONTACT   </a></li>
+						<div class="header__menu">
+							<nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand header__logo" href="#">Cahee</a>
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+								<div class="collapse navbar-collapse" id="navbarNav">
+									<ul class="navbar-nav">
+										<li class="nav-item active"><a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a></li>
+										<li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
 									</ul>
-							</div>
+								</div>
+							</nav>
 						</div>
 						<div class="header__main">
 							<div class="header__title">
@@ -103,17 +105,139 @@
 								<p>ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
-						<div class="gallery__img">
-							<div class="gallery__img_1"><img src="../img/img1.png" alt=""></div>
-							<div class="gallery__img_2"><img src="../img/img2.png" alt=""></div>
-							<div class="gallery__img_3"><img src="../img/img3.png" alt=""></div>
-						</div>
-						<div class="gallery__img">
-							<div class="gallery__img_4"><img src="../img/img4.png" alt=""></div>
-							<div class="gallery__img_5"><img src="../img/img5.png" alt=""></div>
+						<div class="gallery__img"> 
+							<div class="gallery__img--row">
+								<div class="gallery__img--column">
+									<div class="gallery__img_1 gallery__img--hack"><img class="hack" src="../img/img1.png" alt=""></div>
+								</div>
+								<div class="gallery__img--column_2">
+									<div class="gallery__img_2 gallery__img--hack"><img class="hack" src="../img/img2.png" alt=""></div>
+									<div class="gallery__img_3 gallery__img--hack"><img class="hack" src="../img/img3.png" alt=""></div>
+								</div>
+								<div class="gallery__img--column_3">
+									<div class="gallery__img_4 gallery__img--hack"><img class="hack" src="../img/img4.png" alt=""></div>
+								</div>
+								<div class="gallery__img--column_4">
+									<div class="gallery__img_5 gallery__img--hack"><img class="hack" src="../img/img5.png" alt=""></div>
+								</div>
+							</div>
 						</div>
 						<div class="gallery__btn">
 							<button class="btn" type="button"><span>VIEW MORE</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="subscribe">
+						<div class="subscribe__description">
+							<div class="subscribe__title"><span>Subscribe To Us</span></div>
+							<div class="subscribe__text">
+								<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+								<p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							</div>
+						</div>
+						<div class="subscribe__form">
+							<form action="/action_page.php">
+								<label for="email"></label>
+								<input class="subscribe__input" id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" placeholder="Your Email adress">
+								<button class="subscribe__button" type="SUBSCRIBE"> <span>SUBSCRIBE</span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="blog">
+						<div class="blog__description">
+							<div class="blog__title"><span>Blog</span></div>
+							<div class="blog__text">
+								<p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+								<p>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </p>
+								<p>dolor in reprehenderit in voluptate velit.</p>
+							</div>
+						</div>
+						<div class="blog__cards">
+							<div class="blog__card"><img class="hack" src="./img/blog_1.png" alt="">
+								<div class="blog__date">
+									<p class="blog__day">20</p>
+									<p class="blog__month">NOV</p>
+								</div><a href="/">
+									<div class="blog__info">
+										<p class="blog__card-title">Green Smoothies: Too Much of a Good Thing?</p>
+										<p class="blog__card-author">By Auskteez - 2 hours ago</p>
+									</div></a>
+							</div>
+							<div class="blog__card"><img class="hack" src="./img/blog_2.png" alt="">
+								<div class="blog__date">
+									<p class="blog__day">14</p>
+									<p class="blog__month">NOV</p>
+								</div><a href="/">
+									<div class="blog__info">
+										<p class="blog__card-title">Growing Food and a “Thirst” for Innovation</p>
+										<p class="blog__card-author">By Auskteez - 3 hours ago</p>
+									</div></a>
+							</div>
+							<div class="blog__card"><img class="hack" src="./img/blog_3.png" alt="">
+								<div class="blog__date">
+									<p class="blog__day">10</p>
+									<p class="blog__month">NOV</p>
+								</div><a href="/">
+									<div class="blog__info">
+										<p class="blog__card-title">Pesticides & Food: What You Need to Know</p>
+										<p class="blog__card-author">By Auskteez - 6 hours ago</p>
+									</div></a>
+							</div>
+						</div>
+						<div class="blog__btn">
+							<button class="btn" type="button"><span>VIEW MORE</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="contact">
+						<div class="contact__description">
+							<div class="contact__title"><span>Contact</span></div>
+							<div class="contact__text">
+								<p>For new projects, ideas, business or anything</p>
+								<p>you'd like to discuss, contact with me!</p>
+							</div>
+						</div>
+						<div class="contact__main">
+							<div class="contact__form">
+								<form action="/action_page.php">
+									<label for="name"></label>
+									<input id="fname" type="text" placeholder="Auskteez Tran">
+									<label for="email"></label>
+									<input id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" placeholder="Your Email...">
+									<label for="phone"></label>
+									<input type="tel" id="phone" name="phone" pattern="^+?3?8?(0d{9})$" placeholder="Your phone number...">
+									<label for="text">     </label>
+									<textarea id="text" name="text" rows="4" cols="50" placeholder="Your messge...">     </textarea>
+									<label for="btn">          </label>
+									<input type="submit" id="btn" value="Submit">
+								</form>
+							</div>
+							<div class="contact__adress">
+								<p>ADDRESS</p><span>123 City name, Street, City, Country</span>
+								<p>EMAIL</p><span>cahee@domain.com</span>
+								<p>PHONE</p><span>+012 345 6789</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="footer">
+						<div class="footer__copyright"><span>© 2015 Company. All right reserved.</span></div>
+						<div class="footer__logo"><a href="#"><span>Cahee</span></a></div>
+						<div class="footer__text">
+							<p>Made with <span>love</span> by Auskteez</p>
 						</div>
 					</div>
 				</div>

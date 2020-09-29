@@ -1,0 +1,45 @@
+.subscribe {
+  display: flex;
+  padding: 145px 0 163px 180px;
+  background: url(../img/subscribe.png) no-repeat center;
+  background-size: cover;
+  flex-direction: column;
+  &__title {
+    font-family: $menu-font;
+    font-weight: bold;
+    font-size: 40px;
+    color: $logo-color;
+    margin-bottom: 34px;
+  }
+  &__text {
+    font-family: $menu-font;
+    font-size: $header_text-size;
+    color: $logo-color;
+    margin-bottom: 30px;
+  }
+  &__input {
+    width: 571px;
+    height: 56px;
+    padding-left: 16px;
+    margin-right: 29px;
+    input[type="text"] {
+        border: 1px solid $logo-color;
+      }
+  }
+  &__button {
+    background-color: $subscribe_btn-color;
+    max-width: 171px;
+    padding: 16px 29px 15px 30px;
+    border: none;
+    box-shadow: 0px 2px 9px 0 rgba(0, 0, 0, 0.75);
+    transition: 0.3s ease-in;
+    span {
+        font-family: $menu-font;
+        font-size: 16px;
+        color: $white;
+    }
+  }
+  &__button:hover {
+    background-color: $logo-color;
+  }
+}

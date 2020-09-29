@@ -1,21 +1,27 @@
 .row
   .col
     .header
-      .header__top
-        .header__logo
-          a(href="#")
-            span Cahee
-        .header__menu
-          -
-            var menu = [
-              {text:'HOME', href:'index.html', active: 1},
-              {text:'ABOUT', href:'#'},
-              {text:'SERVICES', href:'#'},
-              {text:'GALLERY', href:'#'},
-              {text:'BLOG', href:'#'},
-              {text:'CONTACT', href:'#'}
-            ];
-          +menu(menu)
+      .header__menu
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+          a.navbar-brand.header__logo(href='#') Cahee
+          button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarNav.collapse.navbar-collapse
+            ul.navbar-nav
+              li.nav-item.active
+                a.nav-link(href='#')
+                  | HOME 
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='#') ABOUT
+              li.nav-item
+                a.nav-link(href='#') SERVICES
+              li.nav-item
+                a.nav-link(href='#') GALLERY
+              li.nav-item
+                a.nav-link(href='#') BLOG
+              li.nav-item
+                a.nav-link(href='#') CONTACT
       .header__main
         .header__title
           h1 Fresh Life

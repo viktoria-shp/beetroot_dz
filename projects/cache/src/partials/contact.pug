@@ -1,0 +1,29 @@
+.row
+    .col
+        .contact
+            .contact__description
+                .contact__title
+                    span Contact
+                .contact__text
+                    p For new projects, ideas, business or anything
+                    p you'd like to discuss, contact with me!
+            .contact__main
+                .contact__form
+                    form(action='/action_page.php')
+                        label(for='name')
+                        input#fname(type='text' placeholder='Auskteez Tran')
+                        label(for='email')
+                        input#email(type='email' name='email' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' placeholder='Your Email...')
+                        label(for="phone")
+                        input(type="tel" id="phone" name="phone" pattern="^\+?3?8?(0\d{9})$" placeholder="Your phone number...")
+                        label(for="text")      
+                        textarea#text(name='text' rows='4' cols='50' placeholder="Your messge...")      
+                        label(for="btn")           
+                        input(type='submit' id="btn" value='Submit')
+                .contact__adress
+                    p ADDRESS
+                    span 123 City name, Street, City, Country
+                    p EMAIL
+                    span cahee@domain.com
+                    p PHONE
+                    span +012 345 6789

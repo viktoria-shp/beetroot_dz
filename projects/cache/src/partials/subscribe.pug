@@ -1,0 +1,15 @@
+.row
+    .col
+        .subscribe
+            .subscribe__description
+                .subscribe__title
+                    span Subscribe To Us
+                .subscribe__text
+                    p Dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                    p tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            .subscribe__form
+                form(action='/action_page.php')
+                    label(for='email')
+                    input#email(class="subscribe__input" type='email' name='email' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' placeholder='Your Email adress')
+                    button(class="subscribe__button" type='SUBSCRIBE') 
+                        span SUBSCRIBE

@@ -1,0 +1,27 @@
+.footer {
+  background-color: $logo-color;
+  padding: 38px 165px 37px 164px;
+  display: flex;
+  justify-content: space-between;
+  &__copyright {
+    font-family: $menu-font;
+    font-size: 16px;
+    color: #b9b9b9;
+  }
+  &__logo {
+    a {
+      font-family: $logo-font;
+      font-size: 25px;
+      color: #b9b9b9;
+      text-decoration: inherit;
+    }
+  }
+  &__text {
+    font-family: $menu-font;
+    font-size: 15px;
+    color: #b9b9b9;
+    span {
+      color: red;
+    }
+  }
+}
