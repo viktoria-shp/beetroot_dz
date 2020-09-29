@@ -1,25 +1,25 @@
 .row
     .col
         .services
-            .services__btn
-                button(type='button' class=`btn`)
-                    .services__btn--text
-                        p Online Shopping
-                    img(src="./img/cart.svg", alt="")
-                button(type='button' class=`btn`)
-                    .services__btn--text 
-                        p Quality Product
-                    img(src="./img/green.svg", alt="")
-                button(type='button' class=`btn`)
-                    .services__btn--text 
-                        p Domestic & International 
-                        p Delivery
-                    img(src="./img/planet.svg", alt="")
-                button(type='button' class=`btn`)
-                    .services__btn--text 
-                        p Well Organized
-                    img(src="./img/carrot.svg", alt="")
-            .services__img
-                img(src="./img/services_img.png" alt="")
-            .services__title
-                span Our Services
+            ul.services__btns
+                li.services__btn
+                    a.services__link(href='#')
+                        span.services__text Online Shopping
+                        img.services__icon(src="./img/cart.svg", alt="")
+                li.services__btn
+                    a.services__link(href='#')
+                        span.services__text Quality Product
+                        img.services__icon(src="./img/green.svg", alt="")
+                li.services__btn
+                    a.services__link(href='#')
+                        span.services__text Domestic &amp; International Delivery
+                        img.services__icon(src="./img/planet.svg", alt="")
+                li.services__btn
+                    a.services__link(href='#')
+                        span.services__text Well Organized
+                        img.services__icon(src="./img/carrot.svg", alt="")
+            .services__description
+                .services__img
+                    img(src="./img/services_img.png" alt="")
+                .services__title
+                    span Our Services

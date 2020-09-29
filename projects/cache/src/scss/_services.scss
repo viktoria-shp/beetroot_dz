@@ -2,54 +2,126 @@
   background-color: $services-color;
   display: flex;
   justify-content: space-between;
-  padding: 179px 166px 163px 264px;
+  padding: 10px;
   position: relative;
-  &__btn {
+  align-items: center;
+  @media (min-width: 576px) and (max-width: 1023px) {
+    padding: 40px;    
+    flex-direction: row;
+  }
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    padding: 179px 166px 163px 264px;
+  }
+  &__btns {
     display: flex;
     flex-direction: column;
-    .btn {
-      background-color: $white;
-      align-items: center;
-      padding: 26px 25px 26px 60px;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 19px;
-      font-family: $menu-font;
-      font-size: $btn-size;
-      color: $logo-color;
-      font-weight: bold;
-      position: relative;
-      min-width: 402px;
-      box-shadow: 1px 5px 8px 0px rgba(0,0,0,0.75);
-      border: 2px solid $white;
-      transition: 0.3s ease-in;
+    align-items: center;
+    width: 50%;
+  }
+  &__btn {
+    background-color: $white;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-family: $menu-font;
+    font-size: 10px;
+    color: $logo-color;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 1px 5px 8px 0px rgba(0,0,0,0.75);
+    border: 2px solid $white;
+    transition: 0.3s ease-in;
+    width: 100%;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      padding: 15px 25px;
+      margin-bottom: 10px;
+      min-width: 300px;
+      font-size: 12px;
     }
-    .btn:hover {
+    @media (min-width: 1024px) {
+      padding: 26px 25px 26px 60px;
+      margin-bottom: 19px;
+      min-width: 402px;
+      font-size: $btn-size;
+    }
+    &:hover {
         border: 2px solid $logo-color;
     }
-    p:after {
-        content: "";
-        position: absolute;
-        width: 2px;
-        height: 100%;
-        background: $btn-color;
-        top: 0;
-        right: 90px;
-    }
-    .btn:last-child {
+    &:last-child {
       margin-bottom: 0px;
     }
+    img {
+      width: 25px;
+      height: auto;
+      @media (min-width: 576px) and (max-width: 1023px) {
+        width: 40px;
+        height: auto;
+      }
+      @media (min-width: 1024px) {
+        width: 48px;
+        height: auto;
+      }
+    }
   }
+  &__description {
+    display: flex;
+    flex: 50%;
+    width: 50%;
+  }
+  &__link {
+    color: $logo-color;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &:hover {
+      color: $logo-color;
+      text-decoration: none;
+    }
+  }
+  
   &__img {
+    align-items: center;
+    align-content: center;
+    display: flex;
   }
   &__title {
     font-family: $menu-font;
-    font-size: $about_us_title-size;
+    font-size: 30px;
     color: $white;
     font-weight: bold;
     position: absolute;
-    top: 50%;
+    top: 70%;
     right: 50%;
+    text-align: center;
     transform: translate(100%, -100%);
+    @media (min-width: 576px) and (max-width: 1023px) {
+      font-size:40px;
+      top: 55%;
+      right: 42%;
+    }
+    @media (min-width: 1024px) {
+      font-size: $about_us_title-size;
+    }
+    @media (min-width: 1200px) {
+      font-size: $about_us_title-size;
+      top: 57%;
+      right: 43%;
+    }
+  }
+  &__link:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: $btn-color;
+    top: 0;
+    left: 70%;
+  }
+  &__text {
+    max-width: 70%;
   }
 }
