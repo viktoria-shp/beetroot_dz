@@ -1,7 +1,13 @@
 .contact {
   background: url(../img/contact.png) no-repeat center;
   background-size: cover;
-  padding: 101px 349px 120px 164px;
+  padding: 10px;
+  @media (min-width: 576px) and (max-width: 1023px) {
+    padding: 40px;
+  }
+  @media (min-width: 1200px) {
+    padding: 101px 349px 120px 164px;
+  }
   &__description {
     display: flex;
     justify-content: center;
@@ -10,39 +16,83 @@
   }
   &__title {
     font-family: $menu-font;
-    font-size: $about_us_title-size;
+    font-size: 30px;
     color: $logo-color;
     font-weight: bold;
-    margin-bottom: 48px;
+    margin-bottom: 10px;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      font-size: 40px;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 1024px) {
+      font-size: $about_us_title-size;
+      margin-bottom: 48px;
+    }
   }
   &__text {
     font-family: $menu-font;
-    font-size: $header_text-size;
+    font-size: 10px;
     color: $logo-color;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 1024px) {
+      font-size: $header_text-size;
+      margin-bottom: 45px;
+    }
   }
   &__adress {
     font-family: $menu-font;
-    color: $logo-color;
+    color: $white;
     display: flex;
     justify-content: end;
     flex-direction: column;
+    @media (min-width: 1024px) {
+      color: $logo-color;
+    }
     p {
-      font-size: 20px;
+      font-size: 12px;
       font-weight: bold;
+      @media (min-width: 576px) and (max-width: 1023px) {
+        font-size: 14px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 20px;
+      }
     }
     span {
-      font-size: 15px;
+      font-size: 10px;
+      @media (min-width: 576px) and (max-width: 1023px) {
+        font-size: 12px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 15px;
+      }
     }
   }
   &__main {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      font-size: 12px;
+    }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
   &__form {
     display: flex;
     flex-direction: column;
     max-width: 501px;
+    margin-bottom: 15px;
+    @media (min-width: 1024px) {
+      margin-bottom: 0px;
+    }
     textarea {
       background-color: $gallery_img-color;
       opacity: 0.5;
@@ -50,43 +100,66 @@
     }
     label {
       display: block;
-      margin-bottom: 14px;
+      @media (min-width: 1024px) {
+        margin-bottom: 14px;
+      }
     }
     label:first-child {
       margin-bottom: 0;
     }
     #text:focus {
-        opacity: 1;
-        border-left: 6px solid #355B82;
+      opacity: 1;
+      border-left: 6px solid #355b82;
     }
     #text {
       color: $white;
       border: none;
     }
     input {
-      min-height: 51px;
-      min-width: 501px;
+      min-height: 30px;
       background-color: $gallery_img-color;
       border: none;
       width: 100%;
       padding-left: 21px;
-      font-size: 15px;
+      font-size: 11px;
       color: $white;
       opacity: 0.5;
       transition: 0.3 ease-in;
+      @media (min-width: 576px) and (max-width: 1023px) {
+        min-height: 51px;
+        min-width: 501px;
+        font-size: 13px;
+      }
+      @media (min-width: 1024px) {
+        min-height: 51px;
+        min-width: 501px;
+        padding-left: 21px;
+        font-size: 15px;
+      }
+    }
+    textarea::placeholder {
+      color: $white;
+      padding: 7px 0 0 21px;
+      font-size: 11px;
+      @media (min-width: 576px) and (max-width: 1023px) {
+        font-size: 13px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 15px;
+      }
     }
     input::placeholder {
-      font-size: 15px;
       color: $white;
     }
     input:last-child {
       margin-bottom: 0;
     }
     input:focus {
-        opacity: 1;
-        border-left: 6px solid #355B82;
+      opacity: 1;
+      border-left: 6px solid #355b82;
     }
-    textarea:focus, input:focus{
+    textarea:focus,
+    input:focus {
       outline: none;
     }
   }

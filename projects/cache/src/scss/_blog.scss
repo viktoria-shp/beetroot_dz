@@ -1,99 +1,205 @@
 .blog {
   background-color: $blog-color;
-  padding: 101px 165px 120px 164px;
+  padding: 10px;
+  @media (min-width: 576px) and (max-width: 1023px) {
+    padding: 40px;
+  }
+  @media (min-width: 1200px) {
+    padding: 101px 165px 120px 164px;
+  }
   &__description {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 46px;
+    margin-bottom: 10px;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      margin-bottom: 46px;
+    }
+    @media (min-width: 1024px) {
+      margin-bottom: 46px;
+    }
   }
   &__title {
     font-family: $menu-font;
-    font-size: $about_us_title-size;
+    font-size: 30px;
     color: #fff;
     font-weight: bold;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      font-size: 40px;
+    }
+    @media (min-width: 1024px) {
+      font-size: $about_us_title-size;
+    }
   }
   &__text {
     font-family: $menu-font;
-    font-size: $header_text-size;
+    font-size: 10px;
     color: #fff;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      font-size: 12px;
+    }
+    @media (min-width: 1024px) {
+      font-size: $header_text-size;
+    }
   }
   &__cards {
-      display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    @media (min-width: 576px) and (max-width: 1023px) {
       justify-content: space-between;
       margin-bottom: 49px;
+    }
+    @media (min-width: 1024px) {
+      justify-content: space-between;
+      margin-bottom: 49px;
+    }
   }
   &__card {
     position: relative;
-    padding-bottom: 32%;
-    flex: 32%;
-    max-width: 32%;
+    padding-bottom: 70%;
+    flex: 70%;
+    max-width: 70%;
     height: auto;
     box-shadow: 1px 5px 8px 0px rgba(0, 0, 0, 0.75);
+    margin-bottom: 15px;
     .hack {
       height: 100%;
       position: absolute;
     }
     img {
-        width: 100%;
-        height: auto;
+      width: 100%;
+      height: auto;
     }
+    @media (min-width: 576px) and (max-width: 1023px) {
+      padding-bottom: 32%;
+      flex: 32%;
+      max-width: 32%;
+      margin-bottom: 0px;
+    }
+    @media (min-width: 1024px) {
+      padding-bottom: 32%;
+      flex: 32%;
+      max-width: 32%;
+      margin-bottom: 0px;
+    }
+  }
+  &__card:last-child {
+    margin-bottom: 0px;
   }
   &__date {
     background-color: $logo-color;
     opacity: 0.5;
     color: $white;
     position: absolute;
-    top: 40px;
-    left: 43px;
-    width: 61px;
-    height: 61px;
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    height: 35px;
     text-align: center;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      top: 20px;
+      left: 15px;
+      width: 50px;
+      height: 50px;
+    }
+    @media (min-width: 1024px) {
+      top: 40px;
+      left: 43px;
+      width: 61px;
+      height: 61px;
+    }
   }
   &__day {
     font-family: $menu-font;
-    font-size: 32px;
+    font-size: 15px;
     font-weight: bold;
     line-height: 1;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      font-size: 25px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 32px;
+    }
   }
   &__month {
     line-height: 1;
     font-family: $header_title-font;
-    font-size: 20px;
+    font-size: 12px;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      font-size: 17px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
   }
   &__info {
     position: absolute;
-    bottom: 23px;
-    left: 20px;
+    bottom: 20px;
+    left: 10px;
     color: $white;
     opacity: 1;
     font-weight: 700;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      bottom: 20px;
+      left: 15px;
+    }
+    @media (min-width: 1024px) {
+      bottom: 23px;
+      left: 20px;
+    }
   }
   &__card-title {
     font-family: $menu-font;
-    font-size: $btn-size;
+    font-size: 14px;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      font-size: 17px;
+    }
+    @media (min-width: 1024px) {
+      font-size: $btn-size;
+    }
   }
   &__card-author {
     font-family: $menu-font;
-    font-size: 15px;
+    font-size: 10px;
+    @media (min-width: 576px) and (max-width: 1023px) {
+      font-size: 15px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 15px;
+    }
   }
   &__btn {
     display: flex;
     justify-content: center;
     .btn {
       background-color: $blog_btn-color;
-      padding: 21px 43px 20px 44px;
+      padding: 5px 12px 5px 15px;
       transition: 0.3s ease-in;
       box-shadow: 1px 5px 8px 0px rgba(0, 0, 0, 0.75);
+      @media (min-width: 576px) and (max-width: 1023px) {
+        padding: 14px 20px 10px 20px;
+      }
+      @media (min-width: 1024px) {
+        padding: 21px 43px 20px 44px;
+      }
     }
     .btn:hover {
       background-color: $logo-color;
     }
     span {
       color: $white;
-      font-size: $btn-size;
+      font-size: 10px;
       font-family: $menu-font;
+      @media (min-width: 576px) and (max-width: 1023px) {
+        font-size: 14px;
+      }
+      @media (min-width: 1024px) {
+        font-size: $btn-size;
+      }
     }
   }
 }
