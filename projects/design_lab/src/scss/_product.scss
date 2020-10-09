@@ -1,9 +1,17 @@
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
   &__product-container {
-    padding: 105px 0;
+    padding: 118px 0 114px;
   }
   &__product--item {
     margin-bottom: 109px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__product--item:last-child {
     margin-bottom:0;
@@ -20,13 +28,12 @@
   }
   &__subtitle {
     margin-bottom: 37px;
-    font-size: $card-subtitle;
+    font-size: $product_card-subtitle;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: $main-font;
   }
   &__text {
-    margin-bottom: 37px;
     font-size: $card-text;
     font-family: $main-font;
   }

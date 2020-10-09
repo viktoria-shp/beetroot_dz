@@ -13,7 +13,7 @@
     display: flex;
     position: relative;
     flex: 1 1 auto;
-    width: 33.3%;
+    width: 27%;
     padding: 0 10px 10px 0;
     a {
       position: absolute;
@@ -23,6 +23,9 @@
       bottom: 10px;
       cursor: pointer;
     }
+  }
+  &__card:nth-child(3n + 2) {
+    width: 40%;
   }
   &__card:nth-child(3n) {
     padding: 0 0 10px 0;
@@ -42,12 +45,13 @@
   }
   &__card-title {
     position: absolute;
-    font-size: $cards-title;
+    font-size: $card-subtitle;
     text-transform: uppercase;
     font-family: $main-font;
     bottom: 42px;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     left: 47px;
     color: $white;
+    font-weight: 700;
   }
 }

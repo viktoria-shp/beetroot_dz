@@ -6,24 +6,27 @@
   align-content: center;
   font-family: $main-font;
   flex-direction: column;
+  &__about-us-container {
+    padding: 146px 0 159px;
+  }
   &__border {
     border: 1px solid $title-color;
     border-top: none;
     position: relative;
-    padding: 68px 175px 0px;
+    padding: 78px 171px 29px 179px;
   }
   &__about-us {
-    max-width: 900px;    
-    margin: 160px 0;
+    max-width: 900px;   
   }
   &__title {
     font-size: $card-subtitle;
     position: absolute;
-    top: -23px;
+    top: -25px;
     left: 50%;
     transform: translateX(-50%);
     letter-spacing: 8px;
     text-transform: uppercase;
+    font-weight: 700;
   }
   &__text {
     font-size: $card-subtext;
@@ -36,29 +39,27 @@
     max-width: 445px;
     padding-top: 35px;
   }
-  
-}
-.main-box {
-  position: relative;
-  text-align: center;
-  &::before,
-  &::after {
-    display: block;
-    width: 30%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    content: "";
-    background-color: $title-color;
-    height: 1px;
+  .main-box {
+    position: relative;
+    text-align: center;
+    &::before,
+    &::after {
+      display: block;
+      width: 30%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      content: "";
+      background-color: $title-color;
+      height: 1px;
+    }
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      left: initial;
+      width: 30%;
+      display: block;
+    }
   }
-  &::after {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    left: initial;
-    width: 30%;
-    display: block;
-  }
 }
-
