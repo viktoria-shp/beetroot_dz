@@ -10,7 +10,7 @@
   line-height: 0.5;
   max-width: 226px;
   width: 100%;
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
 }
 .btn:hover {
   background: linear-gradient(50deg, $placeholder-color 40%, $light-grey 40%);
@@ -20,6 +20,9 @@
   background: url(../img/choose-us_bg.png) no-repeat;
   background-size: cover;
   padding: 120px 0;
+  &__btn:hover {
+    color: $dark-grey;
+  }
   .container {
     display: flex;
     justify-content: space-between;

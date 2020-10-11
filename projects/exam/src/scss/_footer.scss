@@ -1,0 +1,36 @@
+.footer {
+  background-color: $footer-bg;
+  padding: 121px 0 53px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  &__logo {
+    font-family: $josefin;
+    color: $white;
+    font-size: $H240;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__logo:hover{
+    text-decoration: none;
+    color: $white;
+}
+  &__text {
+    font-family: $josefin;
+    color: $white;
+    font-size: $H60;
+    margin-bottom: 30px;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    a {
+        margin-right: 25px;
+    }
+    a:last-child{
+        margin-right: 0;
+    }
+  }
+}

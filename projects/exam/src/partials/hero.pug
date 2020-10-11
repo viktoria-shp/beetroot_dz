@@ -4,12 +4,12 @@
     p.hero__subtitle Safe Travel Anywhere
     .hero__form
         form(action='/action_page.php')
-            label(for='email' class="sr-only")
-            input#hero_email(class="hero__input" type='email' name='email' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' placeholder='Search Your Travel Destination')
+            label(for='search' class="sr-only")
+            input#hero_search(class="hero__input" type='text' name='search' placeholder='Search Your Travel Destination')
             button(class="hero__button" type='submit') 
                 span Search
                 img(src="./img/hero_search.svg", alt="", class="hero__icon")
     .hero__scroll
-        a(class="uk-button uk-button-primary hero__link" href="#nav" uk-scroll) 
-          span(class="hero__scroll-text") Scroll Down
+        span(class="hero__scroll-text") Scroll Down
+        a(class="uk-button uk-button-primary hero__link bounce" href="#choose_us" uk-scroll) 
           img(src="./img/scroll_down.svg", alt="")

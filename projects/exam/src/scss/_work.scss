@@ -1,0 +1,50 @@
+.work {
+  background-color: $dark-grey;
+  padding: 46px 0 210px;
+  &__icons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  &__bg-img {
+      width: 100%;
+  }
+  &__search {
+    position: absolute;
+    top: 73%;
+    left: -107px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $dark-grey;
+    border-radius: 100%;
+  }
+  &__select{
+    position: absolute;
+    top: 73%;
+    right: calc(50% - 109px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $dark-grey;
+    border-radius: 100%;
+  }
+  &__like {
+    position: absolute;
+    top: 73%;
+    right: -107px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $dark-grey;
+    border-radius: 100%;
+  }
+  &__text {
+    font-family: $aleo;
+    color: $light-grey;
+    font-size: $H360;
+  }
+  img {
+      margin-bottom: 34px;
+  }
+}
