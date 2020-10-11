@@ -27,10 +27,20 @@
     text-align: center;
     justify-content: center;
     a {
-        margin-right: 25px;
+        margin-right: 16px;
     }
     a:last-child{
         margin-right: 0;
+    }
+    img {
+      border: 4px solid transparent;
+      width: 20px;
+      height: 20px;
+    }
+    img:hover {
+      background-color: $main-color;
+      border: 4px solid $main-color;
+      border-radius: 50%;
     }
   }
 }
