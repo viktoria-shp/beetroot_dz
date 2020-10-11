@@ -1,0 +1,38 @@
+.propose_right {
+  background: url(../img/section_2.png) no-repeat;
+  background-size: cover;
+  padding: 228px 0 62px;
+  &__card {
+      opacity: 0.9;
+      background-color: $footer-bg;
+      padding: 51px 32px 50px 31px;
+      max-width: 541px;
+      width: 100%;
+  }
+  &__card--end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__subtitle {
+    font-family: $josefin;
+    color: $light-grey;
+    font-size: $H200;
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-family: $josefin;
+    color: $white;
+    text-transform: uppercase;
+    font-size: $H200;
+    margin-bottom: 29px;
+  }
+&__text {
+    font-family: $josefin;
+    color: $light-grey;
+    font-size: $H60;
+    margin-bottom: 47px;
+}
+&__btn {
+  opacity: 1;
+}
+}

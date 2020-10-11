@@ -1,0 +1,92 @@
+.hero {
+  background: url(../img/hero_bg.png) no-repeat;
+  background-size: cover;
+  padding: 265px 0 215px;
+  text-align: center;
+  &__title {
+    font-family: $josefin;
+    color: $white;
+    font-size: $H480;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 6px;
+  }
+  &__subtitle {
+    font-family: $josefin;
+    font-size: $H220;
+    color: $white;
+    margin-bottom: 49px;
+    letter-spacing: 6px;
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    form {
+      max-width: 651px;
+      width: 100%;
+      text-align: center;
+      font-size: 0;
+      display: flex;
+      justify-content: center;
+      border: 2px solid $white;
+    }
+  }
+  &__input {
+    width: 100%;
+    height: 61px;
+    padding-left: 10px;
+    color: $placeholder-color;
+    font-family: $josefin;
+    font-size: $H40;
+    border: none;
+    text-align: center;
+    letter-spacing: 1;
+    input[type="text"] {
+      border: 1px solid $white;
+    }
+  }
+  &__button {
+    background-color: $main-color;
+    max-width: 151px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px 0 37px;
+    border: none;
+    transition: 0.3s ease-in;
+    span {
+      font-family: $aleo;
+      font-size: $H40;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1;
+    }
+  }
+  &__button:hover {
+    background-color: $placeholder-color;
+  }
+  &__icon {
+    width: 21px;
+    height: 21px;
+  }
+  &__scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 3px;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__scroll-text {
+    margin-bottom: 14px;
+  }
+}

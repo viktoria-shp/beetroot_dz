@@ -1,0 +1,53 @@
+.comment {
+  background: url(../img/comment_bg.png) no-repeat;
+  background-size: cover;
+  padding: 120px 0 200px;
+  &__title {
+    font-family: $aleo;
+    color: $white;
+    font-size: $H360;
+    text-align: center;
+    margin-bottom: 93px;
+  }
+  &__card {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark-grey;
+    position: relative;
+  }
+  &__author {
+    font-family: $josefin;
+    color: $testimonials-color;
+    font-size: $H200;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+  }
+  &__img-wrapper {
+    @include padding-hack(29%, cover);
+    width: 30%;
+  }
+  &__text {
+    font-family: $josefin;
+    color: $light-grey;
+    font-size: $H60;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    position: relative;
+    padding: 20px 50px;
+  }
+  &__blockquote {
+    display: flex;
+    flex-direction: row;
+    img {
+      max-height: 20px;
+      position: absolute;
+      top: 30%;
+      left: 8%;
+    }
+    p {
+      text-indent: 30px;
+    }
+  }
+}
