@@ -1,6 +1,5 @@
 .container {
-  max-width: 1500px;
-  width: 100%;
+  max-width: 100%; 
 }
 .header {
   background: url(../img/header_bg.jpg) no-repeat center;
@@ -85,6 +84,8 @@
     .nav-link {
       color: $logo-color;
       text-decoration: none;
+      border-top: 4px solid transparent;
+      padding-top: 5px;
     }
     .nav-link:hover {
       border-top: 4px solid $header_btn-color;

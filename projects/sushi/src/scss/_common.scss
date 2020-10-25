@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: $main-family;
+  flex-direction: column;
+}
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100px;
+  width: auto;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.title {
+  text-transform: uppercase;
+  font-size: $title-size;
+  font-weight: 700;
+  color: $white;
+  margin-bottom: 42px;
+}
+.text {
+  font-size: $subtitle-size;
+  color: $white;
+}
