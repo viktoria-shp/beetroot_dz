@@ -13,18 +13,27 @@ body {
   align-content: center;
   max-width: 1008px;
   max-height: 861px;
-  padding: 145px 178px 145px 230px;
+  padding: 145px 178px 145px 230px;  
+  position: relative;
 }
 .card {
-  background-color: $bg-color;
-  font-family: $main-font;
-  padding: 33px 56px;
+  background-color: #212534;
+  font-family: "Lato", sans-serif;
+  padding: 0 56px 33px 56px;
   min-width: 601px;
   .icon-white {
     fill: white;
   }
   &__tab {
     overflow: hidden;
+    overflow: hidden;
+    background: #2b3040;
+    width: 601px;
+    position: absolute;
+    top: 3%;
+    padding: 33px 0 0;
+    display: flex;
+    justify-content: space-around;
   }
   &__tablinks {
     max-width: 150px;
@@ -46,7 +55,10 @@ body {
     color: $title-color;
   }
   &__tab button:hover {
-    border-bottom: 3px solid $little_text-color;
+    color: $little_text-color;
+    svg {
+      fill: $little_text-color;
+    }
   }
   &__tab button.active {
     border-bottom: 3px solid $title-color_active;
@@ -165,7 +177,6 @@ body {
   }
 }
 
-
 .graph {
   width: 75px;
   height: 75px;
@@ -198,7 +209,7 @@ body {
   z-index: 10;
 }
 .pc1:after {
-  content: attr(data-percent );
+  content: attr(data-percent);
   display: block;
   width: 67px;
   height: 67px;
