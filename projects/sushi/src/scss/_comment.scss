@@ -1,0 +1,33 @@
+.container-comment {
+  flex-direction: column;
+  align-items: center;
+}
+.comment {
+  background: url(../img/comment_bg.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 97px 0 219px;
+  position: relative;
+  &__img {
+    border-radius: 50%;
+    max-width: 242px;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  &__author {
+    font-family: $main-family;
+    font-weight: 700;
+    font-size: $link-size;
+    color: $white;
+    text-transform: none;
+  }
+  &__text {
+    font-family: $main-family;
+    font-size: $subtitle-size;
+    color: $white;
+  }
+  &__text:nth-child(4) {
+    margin-bottom: 42px;
+  }
+}

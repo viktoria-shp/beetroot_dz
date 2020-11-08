@@ -1,0 +1,257 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/bg_container.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 1008px;
+  max-height: 861px;
+  padding: 145px 178px 145px 230px;
+}
+.card {
+  background-color: $bg-color;
+  font-family: $main-font;
+  padding: 33px 56px;
+  min-width: 601px;
+  .icon-white {
+    fill: white;
+  }
+  &__tab {
+    overflow: hidden;
+  }
+  &__tablinks {
+    max-width: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+  &__tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    color: $title-color;
+  }
+  &__tab button:hover {
+    border-bottom: 3px solid $little_text-color;
+  }
+  &__tab button.active {
+    border-bottom: 3px solid $title-color_active;
+    color: $title-color_active;
+    svg {
+      fill: $white;
+    }
+  }
+  &__tabcontent {
+    display: none;
+    padding: 54px 0 47px;
+    background-color: $bg-color;
+  }
+  &__icon {
+    max-width: 23px;
+    max-height: 23px;
+    margin-bottom: 15px;
+    fill: #b7bacd;
+  }
+  &__left {
+    max-width: 32%;
+  }
+  &__rate {
+    line-height: 0;
+    color: $rate-color;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    .fa {
+      font-size: 19px;
+      padding-right: 10px;
+    }
+    .fa:last-child {
+      padding-right: 0;
+    }
+    .checked {
+      color: $rate-color-cheked;
+    }
+  }
+  &__right {
+    width: 77%;
+    padding-left: 35px;
+  }
+  &__img-wrapper {
+    width: 100%;
+    height: 0;
+    padding-bottom: 165%;
+    position: relative;
+  }
+  &__img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+  }
+  &__right-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__circle {
+    position: relative;
+  }
+  &__titles {
+    display: flex;
+    flex-direction: column;
+  }
+  &__payment {
+    display: flex;
+    flex-direction: column;
+    margin-right: 34px;
+  }
+  &__title {
+    font-size: $card_title-size;
+    color: $white;
+    font-family: $main-font;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    font-size: $card_subtitle-size;
+    color: $white;
+    font-family: $main-font;
+    margin-bottom: 42px;
+  }
+  &__description {
+    font-size: $card_subtitle-size;
+    color: $title-color;
+    font-family: $main-font;
+    margin-bottom: 65px;
+  }
+  &__discount {
+    font-size: $discount-size;
+    font-family: $main-font;
+    margin-bottom: 8px;
+    color: $little_text-color;
+    font-weight: bold;
+  }
+  &__price {
+    font-size: $card_title-size;
+    font-family: $main-font;
+    color: $white;
+  }
+  &__right-bottom {
+    display: flex;
+  }
+  &__tabcontent-box {
+    display: flex;
+  }
+  &__btn {
+    background-color: $button-color;
+    color: $white;
+    font-size: $btn-size;
+    padding: 24px 34px 21px 36px;
+    text-decoration: none;
+  }
+  &__btn:hover {
+    background-color: $rate-color-cheked;
+  }
+}
+
+
+.graph {
+  width: 75px;
+  height: 75px;
+  justify-content: space-around;
+  align-items: center;
+}
+.pc1 {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.pc1 svg:before {
+  content: #d2e0e0;
+  display: block;
+}
+.pc1 svg {
+  width: 75px;
+  height: 75px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.pc1 svg .percent-circle-inner {
+  fill: #787c9b;
+  stroke: #0fdf99;
+  stroke-width: 10px;
+  stroke-dasharray: 0 628.318px;
+  transition: stroke-dasharray 1s ease-out 0.2s;
+  z-index: 10;
+}
+.pc1:after {
+  content: attr(data-percent );
+  display: block;
+  width: 67px;
+  height: 67px;
+  background: #212534;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+  color: #aaadbb;
+  text-align: center;
+  line-height: 65px;
+  font-size: 20px;
+}
+.hidden {
+  display: none;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

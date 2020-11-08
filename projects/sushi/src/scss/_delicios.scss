@@ -1,0 +1,48 @@
+.container-delicious {
+    flex-direction: row;
+    align-items: center;
+}
+.delicious {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    padding: 112px 0 300px;
+    position: relative;
+    &__img {
+        border-radius: 50%;
+        min-width: 466px;
+        width: 100%;
+    }
+    &__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    &__title {
+      font-family: $main-family;
+      font-weight: 700;
+      font-size: $best_sellertitle-size;
+      color: $main-color;
+      margin-bottom: 59px;
+      text-transform: uppercase;
+    }
+    &__text {
+      font-family: $main-family;
+      font-size: $subtitle-size;
+      color: $main-color;
+    }
+    &__text:nth-child(4){
+        margin-bottom: 72px;
+    }
+    &__btn {
+        color: $white;
+        font-weight: 700;
+        font-size: $link-size;
+        background-color: $main-color;
+        padding: 25px 74px 22px 76px;
+        border-radius: 40px/40px;
+      }
+  }
+  

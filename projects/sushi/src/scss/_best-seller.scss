@@ -8,7 +8,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 95px;
+    position: absolute;
+    bottom: -135%;
+    left: 0;
   }
   &__cards {
     display: flex;

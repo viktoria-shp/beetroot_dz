@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>game_ui</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/fav/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card__tab">
+          <button class="card__tablinks" data-tab-id="inf">
+            <svg class="card__icon" width="23" height="23" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" fill="#fff"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="1.8 1.8 22.4 22.4"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M21.4 20h-3.62l-3.79 3.79a1.395 1.395 0 0 1-1.98 0L8.22 20H4.6a2.8 2.8 0 0 1-2.8-2.8V4.599a2.8 2.8 0 0 1 2.8-2.8h16.8a2.8 2.8 0 0 1 2.8 2.8v12.6a2.8 2.8 0 0 1-2.8 2.8zm0-14A1.4 1.4 0 0 0 20 4.598H6a1.4 1.4 0 0 0-1.4 1.4v9.8A1.4 1.4 0 0 0 6 17.2h2.8c.386 0 .736.157.99.41L13 20.82l3.21-3.21c.253-.253.603-.41.99-.41H20a1.4 1.4 0 0 0 1.4-1.4V6zm-4.2 8.4H8.8a1.4 1.4 0 1 1 0-2.8h8.4a1.4 1.4 0 0 1 0 2.8zm0-4.201H8.8a1.4 1.4 0 1 1 0-2.8h8.4a1.4 1.4 0 0 1 0 2.8z"/></svg></svg>INFORMATION
+          </button>
+          <button class="card__tablinks" data-tab-id="pat_inf">
+            <svg class="card__icon" width="20" height="22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0.062 0 19.876 22" fill="#fff" opacity=".702"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="1.007 1.992 18.986 21.015"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M19.993 13.308c0 2.678-2.125 4.849-4.747 4.849-1.554 0-2.914-.775-3.774-1.957l-.023.017-.95-1.293-.949 1.293-.013-.01c-.866 1.177-2.231 1.95-3.784 1.95-2.621 0-4.746-2.171-4.746-4.85 0-1.091.366-2.089.962-2.9l-.013-.01S8.918 1.993 10.5 1.993c1.582 0 8.543 8.406 8.543 8.406l-.013.01c.596.81.963 1.808.963 2.9zM8.918 19.773v-1.616c0-.892.708-1.617 1.582-1.617.874 0 1.582.725 1.582 1.617v1.616c.874 0 1.582.724 1.582 1.617 0 .892-.708 1.617-1.582 1.617H8.918c-.874 0-1.582-.725-1.582-1.617 0-.893.708-1.617 1.582-1.617z"/></svg></svg>RATINGS INFO
+          </button>
+          <button class="card__tablinks" data-tab-id="buy_inf">
+            <svg class="card__icon" width="21" height="21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" fill="#fff" opacity=".702"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="2 1.999 20 20"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M21.946 9.765l.024.006-2.5 11.25-.024-.006c-.125.559-.6.984-1.196.984H5.75c-.596 0-1.071-.425-1.196-.984l-.024.006-2.5-11.25.024-.006C2.034 9.677 2 9.594 2 9.5c0-.691.56-1.25 1.25-1.25h2.5a6.25 6.25 0 1 1 12.5 0h2.5c.69 0 1.25.559 1.25 1.25 0 .094-.034.177-.054.265zM12 4.5a3.75 3.75 0 0 0-3.75 3.75h7.5A3.75 3.75 0 0 0 12 4.5zm5 8.75c-.69 0-1.25-.56-1.25-1.25v-1.25h-7.5V12a1.25 1.25 0 1 1-2.5 0v-1.25h-.942l1.945 8.75h10.494l1.945-8.75h-.942V12c0 .69-.56 1.25-1.25 1.25z"/></svg></svg>WHERE TO BUY
+          </button>
+        </div>
+        <div id="inf" class="card__tabcontent">
+          <div class="card__tabcontent-box">
+            <div class="card__left">
+              <div class="card__img-wrapper">
+                <img class= "card__img" src="./img/main-img.png" alt="">
+              </div>
+              <div class="card__rate">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div> 
+            </div>
+            <div class="card__right">
+              <div class="card__right-top">
+                <div class="card__titles">
+                  <h1 class="card__title">FarCry 4</h1>
+                  <p class="card__subtitle">First Released Nov 17, 2014</p>
+                </div>
+                <div class="card__circle">
+                  <div class="graph">
+                    <div class="percent-circle pc1" data-percent="55">
+                      <svg>
+                      <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
+                    </svg></div>
+                  </div>
+                  <svg class="hidden">
+                    <circle id="percent-circle-svg" cx="50%" cy="50%" r="50%" stroke-alignment="center" ></circle>
+                  </svg>                               
+                </div>
+              </div>
+              <p class="card__description">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima
+                layas struggling under the regime of a despotic self-appointed king.</p>
+              <div class="card__right-bottom">
+                <div class="card__payment">
+                  <p class="card__discount">20% OFF!</p>
+                  <p class="card__price">$59.96</p>
+                </div>
+                <a href="#" class="card__btn">BUY IT NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pat_inf" class="card__tabcontent">
+          <div class="card__tabcontent-box">
+            <div class="card__left">
+              <div class="card__img-wrapper">
+                <img class= "card__img" src="./img/jumanji.png" alt="">
+              </div>
+              <div class="card__rate">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div> 
+            </div>
+            <div class="card__right">
+              <div class="card__right-top">
+                <div class="card__titles">
+                  <h1 class="card__title">Jumanji</h1>
+                  <p class="card__subtitle">First Released Nov 17, 2014</p>
+                </div>
+                <div class="card__circle">
+                  <div class="graph">
+                    <div class="percent-circle pc1" data-percent="75">
+                      <svg>
+                      <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
+                    </svg></div>
+                  </div>
+                  <svg class="hidden">
+                    <circle id="percent-circle-svg" cx="50%" cy="50%" r="50%" stroke-alignment="center" ></circle>
+                  </svg>                               
+                </div>
+              </div>
+              <p class="card__description">Return to The Jungle: Play as movie heroes Dr. Bravestone, Ruby, Mouse, and Prof. Shelley in a hilarious new 3D action adventure.Return to The Jungle: Play as movie heroes Dr. Bravestone, Ruby, Mouse, and Prof. Shelley in a hilarious new 3D action adventure.</p>
+              <div class="card__right-bottom">
+                <div class="card__payment">
+                  <p class="card__discount">10% OFF!</p>
+                  <p class="card__price">$70</p>
+                </div>
+                <a href="#" class="card__btn">BUY IT NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="buy_inf" class="card__tabcontent">
+          <div class="card__tabcontent-box">
+            <div class="card__left">
+              <div class="card__img-wrapper">
+                <img class= "card__img" src="./img/game2_img.png" alt="">
+              </div>
+              <div class="card__rate">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div> 
+            </div>
+            <div class="card__right">
+              <div class="card__right-top">
+                <div class="card__titles">
+                  <h1 class="card__title">Empires & Puzzles</h1>
+                  <p class="card__subtitle">First Released Nov 17, 2018</p>
+                </div>
+                <div class="card__circle">
+                  <div class="graph">
+                    <div class="percent-circle pc1" data-percent="25.6">
+                      <svg>
+                      <use class="percent-circle-inner" xlink:href="#percent-circle-svg"></use>
+                    </svg></div>
+                  </div>
+                  <svg class="hidden">
+                    <circle id="percent-circle-svg" cx="50%" cy="50%" r="50%" stroke-alignment="center" ></circle>
+                  </svg>                               
+                </div>
+              </div>
+              <p class="card__description">Prepare yourself for the greatest battle of your life! Summon legendary heroes, become the ultimate commander and dominate the exciting fast-paced match-3 battles. Will you accept the challenge? Play Empires & Puzzles today!</p>
+              <div class="card__right-bottom">
+                <div class="card__payment">
+                  <p class="card__discount">30% OFF!</p>
+                  <p class="card__price">$100</p>
+                </div>
+                <a href="#" class="card__btn">BUY IT NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+  <script src="js/bundle.js"></script>
+</html>
