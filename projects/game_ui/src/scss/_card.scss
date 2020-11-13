@@ -5,33 +5,23 @@ body {
   background-image: url(../img/bg_container.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  max-width: 1008px;
-  max-height: 861px;
-  padding: 145px 178px 145px 230px;  
-  position: relative;
+  flex-direction: column;
 }
 .card {
   background-color: #212534;
   font-family: "Lato", sans-serif;
-  padding: 0 56px 33px 56px;
-  min-width: 601px;
+  padding: 60px 43px 63px 45px;
+  max-width: 601px;
+  width: 100%;
   .icon-white {
     fill: white;
   }
   &__tab {
     overflow: hidden;
-    overflow: hidden;
     background: #2b3040;
-    width: 601px;
-    position: absolute;
-    top: 3%;
-    padding: 33px 0 0;
+    max-width: 601px;
+    width: 100%;
+    padding: 33px 0 33px;
     display: flex;
     justify-content: space-around;
   }
@@ -42,17 +32,16 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding-bottom: 32px;
   }
   &__tab button {
     background-color: inherit;
-    float: left;
     border: none;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
     font-size: 16px;
     color: $title-color;
+    position: relative;
   }
   &__tab button:hover {
     color: $little_text-color;
@@ -60,7 +49,13 @@ body {
       fill: $little_text-color;
     }
   }
-  &__tab button.active {
+  &__tab button.active::after {
+    position: absolute;
+    content: '';
+    width: 90%;
+    transform: translateX(-50%);
+    bottom: -33px;
+    left: 50%;
     border-bottom: 3px solid $title-color_active;
     color: $title-color_active;
     svg {
@@ -69,7 +64,6 @@ body {
   }
   &__tabcontent {
     display: none;
-    padding: 54px 0 47px;
     background-color: $bg-color;
   }
   &__icon {
@@ -80,6 +74,7 @@ body {
   }
   &__left {
     max-width: 32%;
+    margin-right: 35px;
   }
   &__rate {
     line-height: 0;
@@ -100,7 +95,6 @@ body {
   }
   &__right {
     width: 77%;
-    padding-left: 35px;
   }
   &__img-wrapper {
     width: 100%;
